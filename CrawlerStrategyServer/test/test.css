@@ -1,0 +1,1646 @@
+.container {
+    /* width: 1024px; */
+    /* height: 100%; */
+    /* margin: 0 auto; */
+}
+
+body {
+    background: transparent;
+    /* font-family: 'STFangsong', 'SimSun', 'Microsoft Yahei', 'Times New Roman', Helvetica, Times, Georgia, monospace, Serif; */
+    /* font-style: normal; */  /* italic; oblique; */
+    /* font-size: 0.875em; */  /* px/16 = em ; */
+    /* width: 500px; */
+    /* height: auto; */
+    /* min-height: 100px; */
+    /* margin: 0; */
+    /* padding: 0; */
+}
+div {
+    position: block;  /* static; */
+    background-color: transparent;  /* rgba(24, 150, 76, 0.7); */
+    margin: auto;
+    overflow-x: auto;
+    overflow-y: auto;
+    border-top-style: none;  /* solid; */
+    border-right-style: none;  /* solid; */
+    border-bottom-style: none;  /* solid; */
+    border-left-style: none;  /* solid; */
+    border-top-color: rgba(0, 0, 0, 0.7);
+    border-right-color: rgba(0, 0, 0, 0.7);
+    border-bottom-color: rgba(0, 0, 0, 0.7);
+    border-left-color: rgba(0, 0, 0, 0.7);
+    border-top-Width: 1px;
+    border-right-Width: 1px;
+    border-bottom-Width: 1px;
+    border-left-Width: 1px;
+}
+button {
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: auto;
+    text-align: center;  /* left; right; */
+    font-family: 'STFangsong', 'SimSun', 'Microsoft Yahei', 'Times New Roman', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 0.875em;  /* px/16 = em ; */
+}
+label {
+    left: auto;
+    right: auto;
+    top: auto;
+    margin-left: 5px;
+    margin-right: 15px;
+    line-height: 20px;
+    background: transparent;
+    color: rgba(0, 0, 0, 0.7);  /* #777; */
+    width: auto;
+    height: auto;
+    font-family: 'STFangsong', 'SimSun', 'Microsoft Yahei', 'Times New Roman', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 0.875em;  /* px/16 = em ; */
+    border-top-style: none;  /* solid; */
+    border-right-style: none;  /* solid; */
+    border-bottom-style: none;  /* solid; */
+    border-left-style: none;  /* solid; */
+    border-top-color: rgba(0, 0, 0, 0.7);
+    border-right-color: rgba(0, 0, 0, 0.7);
+    border-bottom-color: rgba(0, 0, 0, 0.7);
+    border-left-color: rgba(0, 0, 0, 0.7);
+    border-top-Width: 1px;
+    border-right-Width: 1px;
+    border-bottom-Width: 1px;
+    border-left-Width: 1px;
+}
+input {
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: 100%;
+    text-align: center;  /* left; right; */
+    background: transparent;
+    font-family: 'STFangsong', 'SimSun', 'Microsoft Yahei', 'Times New Roman', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    border-top-style: solid;  /* none; */
+    border-right-style: solid;  /* none; */
+    border-bottom-style: solid;  /* none; */
+    border-left-style: solid;  /* none; */
+    border-top-color: rgba(0, 0, 0, 0.7);
+    border-right-color: rgba(0, 0, 0, 0.7);
+    border-bottom-color: rgba(0, 0, 0, 0.7);
+    border-left-color: rgba(0, 0, 0, 0.7);
+    border-top-Width: 1px;
+    border-right-Width: 1px;
+    border-bottom-Width: 1px;
+    border-left-Width: 1px;
+    overflow-wrap: break-word;
+}
+p {
+    left: auto;
+    right: auto;
+    top: auto;
+    background: transparent;
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: auto;
+    text-align: left;  /* center; right; */
+    font-family: 'STFangsong', 'SimSun', 'Times New Roman', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 0.875em;  /* px/16 = em ; */
+    overflow-wrap: break-word;
+    border-top-style: none;  /* solid; */
+    border-right-style: none;  /* solid; */
+    border-bottom-style: none;  /* solid; */
+    border-left-style: none;  /* solid; */
+    border-top-color: rgba(0, 0, 0, 0.7);
+    border-right-color: rgba(0, 0, 0, 0.7);
+    border-bottom-color: rgba(0, 0, 0, 0.7);
+    border-left-color: rgba(0, 0, 0, 0.7);
+    border-top-Width: 1px;
+    border-right-Width: 1px;
+    border-bottom-Width: 1px;
+    border-left-Width: 1px;
+}
+textarea {
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;  /* left; right; */
+    color: rgba(0, 0, 0, 0.7);
+    width: inherit;
+    height: auto;
+    background: transparent;
+    font-family: 'STFangsong', 'SimSun', 'Microsoft Yahei', 'Times New Roman', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 0.875em;  /* px/16 = em ; */
+    overflow-wrap: break-word;
+    border-top-style: solid;  /* none; */
+    border-right-style: solid;  /* none; */
+    border-bottom-style: solid;  /* none; */
+    border-left-style: solid;  /* none; */
+    border-top-color: rgba(0, 0, 0, 0.7);
+    border-right-color: rgba(0, 0, 0, 0.7);
+    border-bottom-color: rgba(0, 0, 0, 0.7);
+    border-left-color: rgba(0, 0, 0, 0.7);
+    border-top-Width: 1px;
+    border-right-Width: 1px;
+    border-bottom-Width: 1px;
+    border-left-Width: 1px;
+    resize: both;  /* both(預設值)--在xy方向上均可以拖拽；vertical--在垂直方向上；horizontal--在水平方向上none--不可拖拽；inherit--繼承; */
+}
+table {
+    background: transparent;
+    caption-side: bottom;
+    empty-cells: show;
+    table-layout: fixed;
+}
+/* hr {
+    color: rgba(109, 105, 105, 0.7);
+    size: 0.5em;
+} */
+
+#OperationModuleDiv {
+    position: static;
+    background-color: rgba(24, 150, 76, 0.7);  /* transparent; */
+    margin: auto;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+#NewOpenWebPageContainDataButton {
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: auto;
+    text-align: center;  /* left; right; */
+    font-family: 'STFangsong', 'SimSun', 'Microsoft Yahei', 'Times New Roman', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+}
+
+#DataServerUrlInputLabel {
+    left: auto;
+    right: auto;
+    top: auto;
+    background: transparent;  /* rgba(255, 255, 255, 0.7); */
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: auto;
+    font-family: 'Times New Roman', 'SimSun', 'STFangsong', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    border-top-style: none;  /* solid; */
+    border-right-style: none;  /* solid; */
+    border-bottom-style: none;  /* solid; */
+    border-left-style: none;  /* solid; */
+    border-top-color: rgba(0, 0, 0, 0.7);
+    border-right-color: rgba(0, 0, 0, 0.7);
+    border-bottom-color: rgba(0, 0, 0, 0.7);
+    border-left-color: rgba(0, 0, 0, 0.7);
+    border-top-Width: 1px;
+    border-right-Width: 1px;
+    border-bottom-Width: 1px;
+    border-left-Width: 1px;
+}
+#DataServerUrlInput {
+    background: rgba(255, 255, 255, 0.7);  /* transparent; */
+    color: rgba(0, 0, 0, 0.7);
+    width: 50%;  /* auto; */
+    height: 100%;
+    text-align: left;  /* left; center; right; */
+    font-family: 'STFangsong', 'SimSun', 'Microsoft Yahei', 'Times New Roman', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    overflow-wrap: break-word;
+    border-top-style: auto;  /* solid; none; */
+    border-right-style: auto;  /* solid; none; */
+    border-bottom-style: auto;  /* solid; none; */
+    border-left-style: auto;  /* solid; none; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+}
+#DelayDurationofClickInputLabel {
+    left: auto;
+    right: auto;
+    top: auto;
+    background: transparent;  /* rgba(255, 255, 255, 0.7); */
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: auto;
+    font-family: 'Times New Roman', 'SimSun', 'STFangsong', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    border-top-style: none;  /* solid; */
+    border-right-style: none;  /* solid; */
+    border-bottom-style: none;  /* solid; */
+    border-left-style: none;  /* solid; */
+    border-top-color: rgba(0, 0, 0, 0.7);
+    border-right-color: rgba(0, 0, 0, 0.7);
+    border-bottom-color: rgba(0, 0, 0, 0.7);
+    border-left-color: rgba(0, 0, 0, 0.7);
+    border-top-Width: 1px;
+    border-right-Width: 1px;
+    border-bottom-Width: 1px;
+    border-left-Width: 1px;
+}
+#IntervalOfCircleClickInputTextBoxInput {
+    background: rgba(255, 255, 255, 0.7);  /* transparent; */
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: 100%;
+    text-align: center;  /* left; right; */
+    font-family: 'STFangsong', 'SimSun', 'Microsoft Yahei', 'Times New Roman', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    overflow-wrap: break-word;
+    border-top-style: auto;  /* solid; none; */
+    border-right-style: auto;  /* solid; none; */
+    border-bottom-style: auto;  /* solid; none; */
+    border-left-style: auto;  /* solid; none; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+}
+#RandomizationRelativeIntervalInputTextBoxInput {
+    background: rgba(255, 255, 255, 0.7);  /* transparent; */
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: 100%;
+    text-align: center;  /* left; right; */
+    font-family: 'STFangsong', 'SimSun', 'Microsoft Yahei', 'Times New Roman', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    overflow-wrap: break-word;
+    border-top-style: auto;  /* solid; none; */
+    border-right-style: auto;  /* solid; none; */
+    border-bottom-style: auto;  /* solid; none; */
+    border-left-style: auto;  /* solid; none; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+}
+#DelayDurationUnitLabel {
+    left: auto;
+    right: auto;
+    top: auto;
+    background: transparent;  /* rgba(255, 255, 255, 0.7); */
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: auto;
+    font-family: 'Times New Roman', 'SimSun', 'STFangsong', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    border-top-style: none;  /* solid; */
+    border-right-style: none;  /* solid; */
+    border-bottom-style: none;  /* solid; */
+    border-left-style: none;  /* solid; */
+    border-top-color: rgba(0, 0, 0, 0.7);
+    border-right-color: rgba(0, 0, 0, 0.7);
+    border-bottom-color: rgba(0, 0, 0, 0.7);
+    border-left-color: rgba(0, 0, 0, 0.7);
+    border-top-Width: 1px;
+    border-right-Width: 1px;
+    border-bottom-Width: 1px;
+    border-left-Width: 1px;
+}
+
+#QueryKeyWordInputTextAreaLabel {
+    left: auto;
+    right: auto;
+    top: auto;
+    background: transparent;  /* rgba(255, 255, 255, 0.7); */
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: auto;
+    font-family: 'Times New Roman', 'SimSun', 'STFangsong', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    border-top-style: none;  /* solid; */
+    border-right-style: none;  /* solid; */
+    border-bottom-style: none;  /* solid; */
+    border-left-style: none;  /* solid; */
+    border-top-color: rgba(0, 0, 0, 0.7);
+    border-right-color: rgba(0, 0, 0, 0.7);
+    border-bottom-color: rgba(0, 0, 0, 0.7);
+    border-left-color: rgba(0, 0, 0, 0.7);
+    border-top-Width: 1px;
+    border-right-Width: 1px;
+    border-bottom-Width: 1px;
+    border-left-Width: 1px;
+}
+#QueryKeyWordInputTextBoxInput {
+    background: rgba(255, 255, 255, 0.7);  /* transparent; */
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: 100%;
+    text-align: center;  /* left; right; */
+    font-family: 'STFangsong', 'SimSun', 'Microsoft Yahei', 'Times New Roman', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    overflow-wrap: break-word;
+    border-top-style: auto;  /* solid; none; */
+    border-right-style: auto;  /* solid; none; */
+    border-bottom-style: auto;  /* solid; none; */
+    border-left-style: auto;  /* solid; none; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+}
+#QueryKeyWordSubmitButton {
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: auto;
+    text-align: center;  /* left; right; */
+    font-family: 'STFangsong', 'SimSun', 'Microsoft Yahei', 'Times New Roman', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+}
+
+#CollectDataStartPageNumberInputTextBoxLabel {
+    left: auto;
+    right: auto;
+    top: auto;
+    background: transparent;  /* rgba(255, 255, 255, 0.7); */
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: auto;
+    font-family: 'Times New Roman', 'SimSun', 'STFangsong', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    border-top-style: none;  /* solid; */
+    border-right-style: none;  /* solid; */
+    border-bottom-style: none;  /* solid; */
+    border-left-style: none;  /* solid; */
+    border-top-color: rgba(0, 0, 0, 0.7);
+    border-right-color: rgba(0, 0, 0, 0.7);
+    border-bottom-color: rgba(0, 0, 0, 0.7);
+    border-left-color: rgba(0, 0, 0, 0.7);
+    border-top-Width: 1px;
+    border-right-Width: 1px;
+    border-bottom-Width: 1px;
+    border-left-Width: 1px;
+}
+#CollectDataStartPageNumberInputTextBoxInput {
+    background: rgba(255, 255, 255, 0.7);  /* transparent; */
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: 100%;
+    text-align: center;  /* left; right; */
+    font-family: 'STFangsong', 'SimSun', 'Microsoft Yahei', 'Times New Roman', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    overflow-wrap: break-word;
+    border-top-style: auto;  /* solid; none; */
+    border-right-style: auto;  /* solid; none; */
+    border-bottom-style: auto;  /* solid; none; */
+    border-left-style: auto;  /* solid; none; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+}
+#CollectDataStartPageStartEntryNumberInputTextBoxInput {
+    background: rgba(255, 255, 255, 0.7);  /* transparent; */
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: 100%;
+    text-align: center;  /* left; right; */
+    font-family: 'STFangsong', 'SimSun', 'Microsoft Yahei', 'Times New Roman', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    overflow-wrap: break-word;
+    border-top-style: auto;  /* solid; none; */
+    border-right-style: auto;  /* solid; none; */
+    border-bottom-style: auto;  /* solid; none; */
+    border-left-style: auto;  /* solid; none; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+}
+#MaximumNumberOfItemsCanBeCollectedInThisPageDisplayLabel {
+    left: auto;
+    right: auto;
+    top: auto;
+    background: transparent;  /* rgba(255, 255, 255, 0.7); */
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: auto;
+    font-family: 'Times New Roman', 'SimSun', 'STFangsong', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    border-top-style: none;  /* solid; */
+    border-right-style: none;  /* solid; */
+    border-bottom-style: none;  /* solid; */
+    border-left-style: none;  /* solid; */
+    border-top-color: rgba(0, 0, 0, 0.7);
+    border-right-color: rgba(0, 0, 0, 0.7);
+    border-bottom-color: rgba(0, 0, 0, 0.7);
+    border-left-color: rgba(0, 0, 0, 0.7);
+    border-top-Width: 1px;
+    border-right-Width: 1px;
+    border-bottom-Width: 1px;
+    border-left-Width: 1px;
+}
+#CollectDataEndPageNumberInputTextBoxLabel {
+    left: auto;
+    right: auto;
+    top: auto;
+    background: transparent;  /* rgba(255, 255, 255, 0.7); */
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: auto;
+    font-family: 'Times New Roman', 'SimSun', 'STFangsong', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    border-top-style: none;  /* solid; */
+    border-right-style: none;  /* solid; */
+    border-bottom-style: none;  /* solid; */
+    border-left-style: none;  /* solid; */
+    border-top-color: rgba(0, 0, 0, 0.7);
+    border-right-color: rgba(0, 0, 0, 0.7);
+    border-bottom-color: rgba(0, 0, 0, 0.7);
+    border-left-color: rgba(0, 0, 0, 0.7);
+    border-top-Width: 1px;
+    border-right-Width: 1px;
+    border-bottom-Width: 1px;
+    border-left-Width: 1px;
+}
+#CollectDataEndPageNumberInputTextBoxInput {
+    background: rgba(255, 255, 255, 0.7);  /* transparent; */
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: 100%;
+    text-align: center;  /* left; right; */
+    font-family: 'STFangsong', 'SimSun', 'Microsoft Yahei', 'Times New Roman', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    overflow-wrap: break-word;
+    border-top-style: auto;  /* solid; none; */
+    border-right-style: auto;  /* solid; none; */
+    border-bottom-style: auto;  /* solid; none; */
+    border-left-style: auto;  /* solid; none; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+}
+#CollectDataEndPageEndEntryNumberInputTextBoxInput {
+    background: rgba(255, 255, 255, 0.7);  /* transparent; */
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: 100%;
+    text-align: center;  /* left; right; */
+    font-family: 'STFangsong', 'SimSun', 'Microsoft Yahei', 'Times New Roman', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    overflow-wrap: break-word;
+    border-top-style: auto;  /* solid; none; */
+    border-right-style: auto;  /* solid; none; */
+    border-bottom-style: auto;  /* solid; none; */
+    border-left-style: auto;  /* solid; none; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+}
+#ExtractCanbeCollectedWebPageNumberButton {
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: auto;
+    text-align: center;  /* left; right; */
+    font-family: 'STFangsong', 'SimSun', 'Microsoft Yahei', 'Times New Roman', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+}
+
+#StartORStopCollectDataButton {
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: auto;
+    text-align: center;  /* left; right; */
+    font-family: 'STFangsong', 'SimSun', 'Microsoft Yahei', 'Times New Roman', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+}
+#NewOpenWebPageButton {
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: auto;
+    text-align: center;  /* left; right; */
+    font-family: 'STFangsong', 'SimSun', 'Microsoft Yahei', 'Times New Roman', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+}
+#DataCollectStatusLabelTwoLabel {
+    left: auto;
+    right: auto;
+    top: auto;
+    background: transparent;  /* rgba(255, 255, 255, 0.7); */
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: auto;
+    font-family: 'SimSun', 'Times New Roman', 'STFangsong', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    border-top-style: none;  /* solid; */
+    border-right-style: none;  /* solid; */
+    border-bottom-style: none;  /* solid; */
+    border-left-style: none;  /* solid; */
+    border-top-color: rgba(0, 0, 0, 0.7);
+    border-right-color: rgba(0, 0, 0, 0.7);
+    border-bottom-color: rgba(0, 0, 0, 0.7);
+    border-left-color: rgba(0, 0, 0, 0.7);
+    border-top-Width: 1px;
+    border-right-Width: 1px;
+    border-bottom-Width: 1px;
+    border-left-Width: 1px;
+}
+
+#CollectResultFromMemoryToHardDiskButton {
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: auto;
+    text-align: center;  /* left; right; */
+    font-family: 'STFangsong', 'SimSun', 'Microsoft Yahei', 'Times New Roman', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+}
+#StoredCollectResultFromHardDiskToMemoryButton {
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: auto;
+    text-align: center;  /* left; right; */
+    font-family: 'STFangsong', 'SimSun', 'Microsoft Yahei', 'Times New Roman', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+}
+#FilePathSaveCollectedData {
+    background: rgba(255, 255, 255, 0.7);  /* transparent; */
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: 100%;
+    text-align: center;  /* left; right; */
+    font-family: 'STFangsong', 'SimSun', 'Microsoft Yahei', 'Times New Roman', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    overflow-wrap: break-word;
+    border-top-style: auto;  /* solid; none; */
+    border-right-style: auto;  /* solid; none; */
+    border-bottom-style: auto;  /* solid; none; */
+    border-left-style: auto;  /* solid; none; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+}
+
+#OperationModuleDivTemporaryStorageNewOpenWebPageScriptFunctionCodeStringTagP_NewOpenWebPageButton {
+    left: auto;
+    right: auto;
+    top: auto;
+    background: transparent;  /* rgba(255, 255, 255, 0.7); */
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: auto;
+    text-align: left;  /* center; right; */
+    font-family: 'Times New Roman', 'STFangsong', 'SimSun', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: italic;  /* normal; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    overflow-wrap: break-word;
+    border-top-style: auto;  /* solid; none; */
+    border-right-style: auto;  /* solid; none; */
+    border-bottom-style: auto;  /* solid; none; */
+    border-left-style: auto;  /* solid; none; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+}
+#TagSpanTemporaryStorageNewOpenWebPageInsertFunctionCodeString_NewOpenWebPageButton {
+    left: auto;
+    right: auto;
+    top: auto;
+    background: transparent;  /* rgba(255, 255, 255, 0.7); */
+    color: rgba(151, 71, 6, 0.7);  /* rgba(153, 17, 187, 0.7); */
+    width: auto;
+    height: auto;
+    text-align: left;  /* center; right; */
+    font-family: 'Times New Roman', 'STFangsong', 'SimSun', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: italic;  /* normal; oblique; */
+    font-size: 0.85em;  /* px/16 = em ; */
+    overflow-wrap: break-word;
+    border-top-style: auto;  /* solid; none; */
+    border-right-style: auto;  /* solid; none; */
+    border-bottom-style: auto;  /* solid; none; */
+    border-left-style: auto;  /* solid; none; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+}
+
+#DataSourcePageLevelInputLabel {
+    left: auto;
+    right: auto;
+    top: auto;
+    background: transparent;  /* rgba(255, 255, 255, 0.7); */
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: auto;
+    font-family: 'Times New Roman', 'SimSun', 'STFangsong', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    border-top-style: none;  /* solid; */
+    border-right-style: none;  /* solid; */
+    border-bottom-style: none;  /* solid; */
+    border-left-style: none;  /* solid; */
+    border-top-color: rgba(0, 0, 0, 0.7);
+    border-right-color: rgba(0, 0, 0, 0.7);
+    border-bottom-color: rgba(0, 0, 0, 0.7);
+    border-left-color: rgba(0, 0, 0, 0.7);
+    border-top-Width: 1px;
+    border-right-Width: 1px;
+    border-bottom-Width: 1px;
+    border-left-Width: 1px;
+}
+#DataSourcePageLevel1Radio {
+    color: rgba(0, 0, 0, 0.7);
+    /* margin: 0.5rem; */
+    width: 20px;
+    height: 20px;
+}
+#DataSourcePageLevel1RadioTXET {
+    left: auto;
+    right: auto;
+    top: auto;
+    margin-left: 5px;
+    margin-right: 15px;
+    line-height: 20px;
+    /* color: rgba(0, 0, 0, 0.7); */  /* #777; */
+    width: auto;
+    height: auto;
+    text-align: center;  /* left; right; */
+    font-family: 'Times New Roman', 'STFangsong', 'SimSun', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    overflow-wrap: break-word;
+    display: inline-block;
+}
+#DataSourcePageLevel2Radio {
+    color: rgba(0, 0, 0, 0.7);
+    /* margin: 0.5rem; */
+    width: 20px;
+    height: 20px;
+}
+#DataSourcePageLevel2RadioTXET {
+    left: auto;
+    right: auto;
+    top: auto;
+    margin-left: 5px;
+    margin-right: 15px;
+    line-height: 20px;
+    /* color: rgba(0, 0, 0, 0.7); */  /* #777; */
+    width: auto;
+    height: auto;
+    text-align: center;  /* left; right; */
+    font-family: 'Times New Roman', 'STFangsong', 'SimSun', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    overflow-wrap: break-word;
+    display: inline-block;
+}
+
+#ResultDisplayContainerCanvasDatagridRadio {
+    color: rgba(0, 0, 0, 0.7);
+    /* margin: 0.5rem; */
+    width: 20px;
+    height: 20px;
+}
+#ResultDisplayContainerCanvasDatagridRadioTXET {
+    left: auto;
+    right: auto;
+    top: auto;
+    margin-left: 5px;
+    margin-right: 15px;
+    line-height: 20px;
+    /* color: rgba(0, 0, 0, 0.7); */  /* #777; */
+    width: auto;
+    height: auto;
+    text-align: center;  /* left; right; */
+    font-family: 'Times New Roman', 'STFangsong', 'SimSun', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    overflow-wrap: break-word;
+    display: inline-block;
+}
+#ResultDisplayContainerTableRadio {
+    color: rgba(0, 0, 0, 0.7);
+    /* margin: 0.5rem; */
+    width: 20px;
+    height: 20px;
+}
+#ResultDisplayContainerTableRadioTXET {
+    left: auto;
+    right: auto;
+    top: auto;
+    margin-left: 5px;
+    margin-right: 15px;
+    line-height: 20px;
+    /* color: rgba(0, 0, 0, 0.7); */  /* #777; */
+    width: auto;
+    height: auto;
+    text-align: center;  /* left; right; */
+    font-family: 'Times New Roman', 'STFangsong', 'SimSun', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    overflow-wrap: break-word;
+    display: inline-block;
+}
+
+
+/* 單選框 <input type=radio> 美化格式配置 */
+.radio_label {
+    /* font-family: 'Times New Roman', 'STFangsong', 'SimSun', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif; */
+    /* font-style: normal; */  /* italic; oblique; */
+    font-size: 1.4em;  /* px/16 = em ; */
+}
+.radio_type {
+    width: 20px;
+    height: 20px;
+    /* appearance: none; */
+    position: relative;
+}
+.radio_type:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 1px solid transparent;
+    display: inline-block;
+    border-radius: 50%;  /* 邊框圓角設爲 50% 表示圓形 */
+    vertical-align: middle;
+}
+.radio_type:checked:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 1px solid #632135;
+    background: #632135;
+    display: inline-block;
+    border-radius: 50%;  /* 邊框圓角設爲 50% 表示圓形 */
+    vertical-align: middle;
+}
+.radio_type:checked:after {
+    content: '';
+    width: 10px;
+    height: 5px;
+    border: 2px solid white;
+    border-top: transparent;
+    border-right: transparent;
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    /* vertical-align: middle; */
+    transform: rotate(-45deg);
+}
+.radio_type:checked + .radio_label {
+    color: #632135;
+}
+
+/* 複選框 <input type=checkbox> 美化格式配置 */
+.checkbox_label {
+    /* font-family: 'Times New Roman', 'STFangsong', 'SimSun', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif; */
+    /* font-style: normal; */  /* italic; oblique; */
+    font-size: 1.4em;  /* px/16 = em ; */
+}
+.checkbox_type {
+    width: 20px;
+    height: 20px;
+    /* appearance: none; */
+    position: relative;
+}
+.checkbox_type:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 1px solid transparent;
+    display: inline-block;
+    border-radius: 0%;  /* 邊框圓角設爲 0% 表示方形 */
+    vertical-align: middle;
+}
+.checkbox_type:checked:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 1px solid #1816aa;
+    background: #1816aa;
+    display: inline-block;
+    border-radius: 0%;  /* 邊框圓角設爲 0% 表示方形 */
+    vertical-align: middle;
+}
+.checkbox_type:checked:after {
+    content: '';
+    width: 10px;
+    height: 5px;
+    border: 2px solid white;
+    border-top: transparent;
+    border-right: transparent;
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    /* vertical-align: middle; */
+    transform: rotate(-45deg);
+}
+.checkbox_type:checked + .checkbox_label {
+    color: #1816aa;
+}
+
+
+#ParameterVariableDiv {
+    position: static;
+    background-color: rgba(24, 150, 76, 0.7);  /* transparent; */
+    margin: auto;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+#CustomOpenContainDataWebPageNameInputLabel {
+    left: auto;
+    right: auto;
+    top: auto;
+    background: transparent;  /* rgba(255, 255, 255, 0.7); */
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: auto;
+    font-family: 'Times New Roman', 'STFangsong', 'SimSun', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    border-top-style: none;  /* solid; */
+    border-right-style: none;  /* solid; */
+    border-bottom-style: none;  /* solid; */
+    border-left-style: none;  /* solid; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+}
+#CustomOpenContainDataWebPageNameInputTextarea {
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    text-align: left;  /* center; left; right; */
+    color: rgba(0, 0, 0, 0.7);
+    width: 100%;  /* inherit; */
+    height: auto;
+    background: rgba(255, 255, 255, 0.7);  /* transparent; */
+    font-family: 'Times New Roman', 'STFangsong', 'SimSun', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    overflow-wrap: break-word;
+    border-top-style: auto;  /* solid; none; */
+    border-right-style: auto;  /* solid; none; */
+    border-bottom-style: auto;  /* solid; none; */
+    border-left-style: auto;  /* solid; none; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+    resize: horizontal;  /* both(預設值)--在xy方向上均可以拖拽；vertical--在垂直方向上；horizontal--在水平方向上；none--不可拖拽；inherit--繼承; */
+}
+#URLofDataWebPageInputLabel {
+    left: auto;
+    right: auto;
+    top: auto;
+    background: transparent;  /* rgba(255, 255, 255, 0.7); */
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: auto;
+    font-family: 'Times New Roman', 'STFangsong', 'SimSun', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    border-top-style: none;  /* solid; */
+    border-right-style: none;  /* solid; */
+    border-bottom-style: none;  /* solid; */
+    border-left-style: none;  /* solid; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+}
+#URLofDataWebPageInputTextarea {
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    text-align: left;  /* center; left; right; */
+    color: rgba(0, 0, 0, 0.7);
+    width: 100%;  /* inherit; */
+    height: auto;
+    background: rgba(255, 255, 255, 0.7);  /* transparent; */
+    font-family: 'Times New Roman', 'STFangsong', 'SimSun', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    overflow-wrap: break-word;
+    border-top-style: auto;  /* solid; none; */
+    border-right-style: auto;  /* solid; none; */
+    border-bottom-style: auto;  /* solid; none; */
+    border-left-style: auto;  /* solid; none; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+    resize: horizontal;  /* both(預設值)--在xy方向上均可以拖拽；vertical--在垂直方向上；horizontal--在水平方向上；none--不可拖拽；inherit--繼承; */
+}
+#WebKeyWordTextboxElementXPathInputLabel {
+    left: auto;
+    right: auto;
+    top: auto;
+    background: transparent;  /* rgba(255, 255, 255, 0.7); */
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: auto;
+    font-family: 'Times New Roman', 'STFangsong', 'SimSun', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    border-top-style: none;  /* solid; */
+    border-right-style: none;  /* solid; */
+    border-bottom-style: none;  /* solid; */
+    border-left-style: none;  /* solid; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+}
+#WebKeyWordTextboxElementXPathInputTextarea {
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    text-align: left;  /* center; left; right; */
+    color: rgba(0, 0, 0, 0.7);
+    width: 100%;  /* inherit; */
+    height: auto;
+    background: rgba(255, 255, 255, 0.7);  /* transparent; */
+    font-family: 'Times New Roman', 'STFangsong', 'SimSun', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    overflow-wrap: break-word;
+    border-top-style: auto;  /* solid; none; */
+    border-right-style: auto;  /* solid; none; */
+    border-bottom-style: auto;  /* solid; none; */
+    border-left-style: auto;  /* solid; none; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+    resize: horizontal;  /* both(預設值)--在xy方向上均可以拖拽；vertical--在垂直方向上；horizontal--在水平方向上；none--不可拖拽；inherit--繼承; */
+}
+#WebKeyWordQuerySubmitButtonElementXPathInputLabel {
+    left: auto;
+    right: auto;
+    top: auto;
+    background: transparent;  /* rgba(255, 255, 255, 0.7); */
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: auto;
+    font-family: 'Times New Roman', 'STFangsong', 'SimSun', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    border-top-style: none;  /* solid; */
+    border-right-style: none;  /* solid; */
+    border-bottom-style: none;  /* solid; */
+    border-left-style: none;  /* solid; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+}
+#WebKeyWordQuerySubmitButtonElementXPathInputTextarea {
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    text-align: left;  /* center; left; right; */
+    color: rgba(0, 0, 0, 0.7);
+    width: 100%;  /* inherit; */
+    height: auto;
+    background: rgba(255, 255, 255, 0.7);  /* transparent; */
+    font-family: 'Times New Roman', 'STFangsong', 'SimSun', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    overflow-wrap: break-word;
+    border-top-style: auto;  /* solid; none; */
+    border-right-style: auto;  /* solid; none; */
+    border-bottom-style: auto;  /* solid; none; */
+    border-left-style: auto;  /* solid; none; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+    resize: horizontal;  /* both(預設值)--在xy方向上均可以拖拽；vertical--在垂直方向上；horizontal--在水平方向上；none--不可拖拽；inherit--繼承; */
+}
+#TableWebPageNumberTdElementXPath1InputLabel {
+    left: auto;
+    right: auto;
+    top: auto;
+    background: transparent;  /* rgba(255, 255, 255, 0.7); */
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: auto;
+    font-family: 'Times New Roman', 'STFangsong', 'SimSun', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    border-top-style: none;  /* solid; */
+    border-right-style: none;  /* solid; */
+    border-bottom-style: none;  /* solid; */
+    border-left-style: none;  /* solid; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+}
+#TableWebPageNumberTdElementXPath1InputTextarea {
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    text-align: left;  /* center; left; right; */
+    color: rgba(0, 0, 0, 0.7);
+    width: 100%;  /* inherit; */
+    height: auto;
+    background: rgba(255, 255, 255, 0.7);  /* transparent; */
+    font-family: 'Times New Roman', 'STFangsong', 'SimSun', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    overflow-wrap: break-word;
+    border-top-style: auto;  /* solid; none; */
+    border-right-style: auto;  /* solid; none; */
+    border-bottom-style: auto;  /* solid; none; */
+    border-left-style: auto;  /* solid; none; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+    resize: horizontal;  /* both(預設值)--在xy方向上均可以拖拽；vertical--在垂直方向上；horizontal--在水平方向上；none--不可拖拽；inherit--繼承; */
+}
+#RetrievalResultXPath1InputLabel {
+    left: auto;
+    right: auto;
+    top: auto;
+    background: transparent;  /* rgba(255, 255, 255, 0.7); */
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: auto;
+    font-family: 'Times New Roman', 'STFangsong', 'SimSun', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    border-top-style: none;  /* solid; */
+    border-right-style: none;  /* solid; */
+    border-bottom-style: none;  /* solid; */
+    border-left-style: none;  /* solid; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+}
+#RetrievalResultXPath1InputTextarea {
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    text-align: left;  /* center; left; right; */
+    color: rgba(0, 0, 0, 0.7);
+    width: 100%;  /* inherit; */
+    height: auto;
+    background: rgba(255, 255, 255, 0.7);  /* transparent; */
+    font-family: 'Times New Roman', 'STFangsong', 'SimSun', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    overflow-wrap: break-word;
+    border-top-style: auto;  /* solid; none; */
+    border-right-style: auto;  /* solid; none; */
+    border-bottom-style: auto;  /* solid; none; */
+    border-left-style: auto;  /* solid; none; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+    resize: horizontal;  /* both(預設值)--在xy方向上均可以拖拽；vertical--在垂直方向上；horizontal--在水平方向上；none--不可拖拽；inherit--繼承; */
+}
+#SecondLevelWebPageRetrievalResultXPathInputLabel {
+    left: auto;
+    right: auto;
+    top: auto;
+    background: transparent;  /* rgba(255, 255, 255, 0.7); */
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: auto;
+    font-family: 'Times New Roman', 'STFangsong', 'SimSun', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    border-top-style: none;  /* solid; */
+    border-right-style: none;  /* solid; */
+    border-bottom-style: none;  /* solid; */
+    border-left-style: none;  /* solid; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+}
+#SecondLevelWebPageRetrievalResultXPathInputTextarea {
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    text-align: left;  /* center; left; right; */
+    color: rgba(0, 0, 0, 0.7);
+    width: 100%;  /* inherit; */
+    height: auto;
+    background: rgba(255, 255, 255, 0.7);  /* transparent; */
+    font-family: 'Times New Roman', 'STFangsong', 'SimSun', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    overflow-wrap: break-word;
+    border-top-style: auto;  /* solid; none; */
+    border-right-style: auto;  /* solid; none; */
+    border-bottom-style: auto;  /* solid; none; */
+    border-left-style: auto;  /* solid; none; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+    resize: horizontal;  /* both(預設值)--在xy方向上均可以拖拽；vertical--在垂直方向上；horizontal--在水平方向上；none--不可拖拽；inherit--繼承; */
+}
+#EntryElementfromFirstLevelPagetoSecondLevelPageXPath1InputLabel {
+    left: auto;
+    right: auto;
+    top: auto;
+    background: transparent;  /* rgba(255, 255, 255, 0.7); */
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: auto;
+    font-family: 'Times New Roman', 'STFangsong', 'SimSun', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    border-top-style: none;  /* solid; */
+    border-right-style: none;  /* solid; */
+    border-bottom-style: none;  /* solid; */
+    border-left-style: none;  /* solid; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+}
+#EntryElementfromFirstLevelPagetoSecondLevelPageXPath1InputTextarea {
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    text-align: left;  /* center; left; right; */
+    color: rgba(0, 0, 0, 0.7);
+    width: 100%;  /* inherit; */
+    height: auto;
+    background: rgba(255, 255, 255, 0.7);  /* transparent; */
+    font-family: 'Times New Roman', 'STFangsong', 'SimSun', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    overflow-wrap: break-word;
+    border-top-style: auto;  /* solid; none; */
+    border-right-style: auto;  /* solid; none; */
+    border-bottom-style: auto;  /* solid; none; */
+    border-left-style: auto;  /* solid; none; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+    resize: horizontal;  /* both(預設值)--在xy方向上均可以拖拽；vertical--在垂直方向上；horizontal--在水平方向上；none--不可拖拽；inherit--繼承; */
+}
+#FromSecondLevelWebReturnFirstLevelWebXPathInputLabel {
+    left: auto;
+    right: auto;
+    top: auto;
+    background: transparent;  /* rgba(255, 255, 255, 0.7); */
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: auto;
+    font-family: 'Times New Roman', 'STFangsong', 'SimSun', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    border-top-style: none;  /* solid; */
+    border-right-style: none;  /* solid; */
+    border-bottom-style: none;  /* solid; */
+    border-left-style: none;  /* solid; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+}
+#FromSecondLevelWebReturnFirstLevelWebXPathInputTextarea {
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    text-align: left;  /* center; left; right; */
+    color: rgba(0, 0, 0, 0.7);
+    width: 100%;  /* inherit; */
+    height: auto;
+    background: rgba(255, 255, 255, 0.7);  /* transparent; */
+    font-family: 'Times New Roman', 'STFangsong', 'SimSun', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    overflow-wrap: break-word;
+    border-top-style: auto;  /* solid; none; */
+    border-right-style: auto;  /* solid; none; */
+    border-bottom-style: auto;  /* solid; none; */
+    border-left-style: auto;  /* solid; none; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+    resize: horizontal;  /* both(預設值)--在xy方向上均可以拖拽；vertical--在垂直方向上；horizontal--在水平方向上；none--不可拖拽；inherit--繼承; */
+}
+#TableSkipPageTextboxTdElementXPath1InputLabel {
+    left: auto;
+    right: auto;
+    top: auto;
+    background: transparent;  /* rgba(255, 255, 255, 0.7); */
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: auto;
+    font-family: 'Times New Roman', 'STFangsong', 'SimSun', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    border-top-style: none;  /* solid; */
+    border-right-style: none;  /* solid; */
+    border-bottom-style: none;  /* solid; */
+    border-left-style: none;  /* solid; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+}
+#TableSkipPageTextboxTdElementXPath1InputTextarea {
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    text-align: left;  /* center; left; right; */
+    color: rgba(0, 0, 0, 0.7);
+    width: 100%;  /* inherit; */
+    height: auto;
+    background: rgba(255, 255, 255, 0.7);  /* transparent; */
+    font-family: 'Times New Roman', 'STFangsong', 'SimSun', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    overflow-wrap: break-word;
+    border-top-style: auto;  /* solid; none; */
+    border-right-style: auto;  /* solid; none; */
+    border-bottom-style: auto;  /* solid; none; */
+    border-left-style: auto;  /* solid; none; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+    resize: horizontal;  /* both(預設值)--在xy方向上均可以拖拽；vertical--在垂直方向上；horizontal--在水平方向上；none--不可拖拽；inherit--繼承; */
+}
+#TableSkipPageSubmitButtonTdElementXPath1InputLabel {
+    left: auto;
+    right: auto;
+    top: auto;
+    background: transparent;  /* rgba(255, 255, 255, 0.7); */
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: auto;
+    font-family: 'Times New Roman', 'STFangsong', 'SimSun', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    border-top-style: none;  /* solid; */
+    border-right-style: none;  /* solid; */
+    border-bottom-style: none;  /* solid; */
+    border-left-style: none;  /* solid; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+}
+#TableSkipPageSubmitButtonTdElementXPath1InputTextarea {
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    text-align: left;  /* center; left; right; */
+    color: rgba(0, 0, 0, 0.7);
+    width: 100%;  /* inherit; */
+    height: auto;
+    background: rgba(255, 255, 255, 0.7);  /* transparent; */
+    font-family: 'Times New Roman', 'STFangsong', 'SimSun', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    overflow-wrap: break-word;
+    border-top-style: auto;  /* solid; none; */
+    border-right-style: auto;  /* solid; none; */
+    border-bottom-style: auto;  /* solid; none; */
+    border-left-style: auto;  /* solid; none; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+    resize: horizontal;  /* both(預設值)--在xy方向上均可以拖拽；vertical--在垂直方向上；horizontal--在水平方向上；none--不可拖拽；inherit--繼承; */
+}
+#TableNextPageSubmitButtonImgTdElementXPath1InputLabel {
+    left: auto;
+    right: auto;
+    top: auto;
+    background: transparent;  /* rgba(255, 255, 255, 0.7); */
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: auto;
+    font-family: 'Times New Roman', 'STFangsong', 'SimSun', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    border-top-style: none;  /* solid; */
+    border-right-style: none;  /* solid; */
+    border-bottom-style: none;  /* solid; */
+    border-left-style: none;  /* solid; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+}
+#TableNextPageSubmitButtonImgTdElementXPath1InputTextarea {
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    text-align: left;  /* center; left; right; */
+    color: rgba(0, 0, 0, 0.7);
+    width: 100%;  /* inherit; */
+    height: auto;
+    background: rgba(255, 255, 255, 0.7);  /* transparent; */
+    font-family: 'Times New Roman', 'STFangsong', 'SimSun', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    overflow-wrap: break-word;
+    border-top-style: auto;  /* solid; none; */
+    border-right-style: auto;  /* solid; none; */
+    border-bottom-style: auto;  /* solid; none; */
+    border-left-style: auto;  /* solid; none; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+    resize: horizontal;  /* both(預設值)--在xy方向上均可以拖拽；vertical--在垂直方向上；horizontal--在水平方向上；none--不可拖拽；inherit--繼承; */
+}
+#TableBackPageSubmitButtonImgTdElementXPath1InputLabel {
+    left: auto;
+    right: auto;
+    top: auto;
+    background: transparent;  /* rgba(255, 255, 255, 0.7); */
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: auto;
+    font-family: 'Times New Roman', 'STFangsong', 'SimSun', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    border-top-style: none;  /* solid; */
+    border-right-style: none;  /* solid; */
+    border-bottom-style: none;  /* solid; */
+    border-left-style: none;  /* solid; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+}
+#TableBackPageSubmitButtonImgTdElementXPath1InputTextarea {
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    text-align: left;  /* center; left; right; */
+    color: rgba(0, 0, 0, 0.7);
+    width: 100%;  /* inherit; */
+    height: auto;
+    background: rgba(255, 255, 255, 0.7);  /* transparent; */
+    font-family: 'Times New Roman', 'STFangsong', 'SimSun', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: normal;  /* italic; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    overflow-wrap: break-word;
+    border-top-style: auto;  /* solid; none; */
+    border-right-style: auto;  /* solid; none; */
+    border-bottom-style: auto;  /* solid; none; */
+    border-left-style: auto;  /* solid; none; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+    resize: horizontal;  /* both(預設值)--在xy方向上均可以拖拽；vertical--在垂直方向上；horizontal--在水平方向上；none--不可拖拽；inherit--繼承; */
+}
+#OperationModuleDivTemporaryStorageNewOpenWebPageScriptFunctionCodeStringTagP_NewOpenWebPageContainDataButton {
+    left: auto;
+    right: auto;
+    top: auto;
+    background: transparent;  /* rgba(255, 255, 255, 0.7); */
+    color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: auto;
+    text-align: left;  /* center; right; */
+    font-family: 'Times New Roman', 'STFangsong', 'SimSun', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: italic;  /* normal; oblique; */
+    font-size: 1.75em;  /* px/16 = em ; */
+    overflow-wrap: break-word;
+    border-top-style: auto;  /* solid; none; */
+    border-right-style: auto;  /* solid; none; */
+    border-bottom-style: auto;  /* solid; none; */
+    border-left-style: auto;  /* solid; none; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+}
+#TagSpanTemporaryStorageNewOpenWebPageInsertFunctionCodeString_NewOpenWebPageContainDataButton {
+    left: auto;
+    right: auto;
+    top: auto;
+    background: transparent;  /* rgba(255, 255, 255, 0.7); */
+    color: rgba(151, 71, 6, 0.7);  /* rgba(153, 17, 187, 0.7); */
+    width: auto;
+    height: auto;
+    text-align: left;  /* center; right; */
+    font-family: 'Times New Roman', 'STFangsong', 'SimSun', 'Microsoft Yahei', Helvetica, Times, Georgia, monospace, Serif;
+    font-style: italic;  /* normal; oblique; */
+    font-size: 0.85em;  /* px/16 = em ; */
+    overflow-wrap: break-word;
+    border-top-style: auto;  /* solid; none; */
+    border-right-style: auto;  /* solid; none; */
+    border-bottom-style: auto;  /* solid; none; */
+    border-left-style: auto;  /* solid; none; */
+    border-top-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-right-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-bottom-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-left-color: auto;  /* rgba(0, 0, 0, 0.7); */
+    border-top-Width: auto;  /* 1px; */
+    border-right-Width: auto;  /* 1px; */
+    border-bottom-Width: auto;  /* 1px; */
+    border-left-Width: auto;  /* 1px; */
+}
+
+
+#ResultExhibitsDiv {
+    position: static;
+    background-color: transparent;  /* rgba(24, 150, 76, 0.7); */
+    margin: auto;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+#ResultExhibitsDivTagTable {
+    background: auto;
+    caption-side: bottom;
+    empty-cells: show;
+    table-layout: fixed;
+}
