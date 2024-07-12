@@ -38,10 +38,7 @@ https://www.google.cn/intl/zh-TW/chrome/dev/?standalone=1&system=true&statcb=1&i
 [瀏覽器 ( Browser ) 之 Google Chrome 驅動 ( Driver ) 下載官方網站](https://chromedriver.storage.googleapis.com/index.html): 
 https://chromedriver.storage.googleapis.com/index.html
 
-[瀏覽器 ( Browser ) 之 Google Chrome 驅動 ( Driver ) 下載官方網站淘寶網鏡像源](https://termux.com/): 
-https://termux.com/
-
-[https://npm.taobao.org/mirrors/chromedriver](https://npm.taobao.org/mirrors/chromedriver): 
+[瀏覽器 ( Browser ) 之 Google Chrome 驅動 ( Driver ) 下載官方網站淘寶網鏡像源](https://npm.taobao.org/mirrors/chromedriver): 
 https://npm.taobao.org/mirrors/chromedriver
 
 Interpreter : Node.js
