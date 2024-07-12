@@ -5,11 +5,13 @@
 #### 使用 Google 瀏覽器 Chrome 擴展插件 ( Extension ) 製作的, 自動化操作網頁讀取資訊, 網頁定向爬蟲工具.
 ---
 <p word-wrap: break-word; word-break: break-all; overflow-x: hidden; overflow-x: hidden;>
-一. 啓動測試網站 :  root@localhost:~# /bin/node ./focused-crawling-Chrome-Extension/testWeb/server.js
+一. 啓動 Google 瀏覽器 Chrome , 載入 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : focused-crawling-Chrome-Extension
 
-二. 啓動 Google 瀏覽器 Chrome , 加載 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : focused-crawling-Chrome-Extension
+二. 運行 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : focused-crawling-Chrome-Extension , 在擴展插件的策略介面選擇 test 選項, 加載顯示 test 人機交互介面.
 
-三. 測試 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : focused-crawling-Chrome-Extension
+三. 啓動運行測試網站 :  root@localhost:~# /bin/node ./focused-crawling-Chrome-Extension/testWeb/server.js
+
+四. 測試 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : focused-crawling-Chrome-Extension , 操控讀取測試網站 testWeb 頁面顯示的資訊.
 </p>
 
 ---
@@ -58,6 +60,38 @@ https://github.com/nodejs
 
 [程式設計 JavaScript 語言解釋器 ( Interpreter ) 之 Node.js 官方 GitHub 網站倉庫](https://github.com/nodejs/node): 
 https://github.com/nodejs/node.git
+
+JavaScript library : jQuery , Bootstrap
+
+[網頁元素選擇器工具 jQuery 官方網站](https://jquery.com/): 
+https://jquery.com/
+
+[網頁元素選擇器工具 jQuery 官方下載頁](https://jquery.com/download/): 
+https://jquery.com/download/
+
+[網頁元素選擇器工具 jQuery 官方説明手冊](https://api.jquery.com/): 
+https://api.jquery.com/
+
+[網頁元素選擇器工具 jQuery 的 npm ( Node Package Manager ) 官方倉庫頁](https://www.npmjs.com/package/jquery): 
+https://www.npmjs.com/package/jquery
+
+[網頁元素選擇器工具 jQuery 的 GitHub 官方倉庫頁](https://github.com/jquery/jquery): 
+https://github.com/jquery/jquery.git
+
+[響應式網站布局框架 bootstrap 官方網站](https://v5.bootcss.com/): 
+https://v5.bootcss.com/
+
+[響應式網站布局框架 bootstrap 官方下載頁](https://v5.bootcss.com/docs/getting-started/download/): 
+https://v5.bootcss.com/docs/getting-started/download/
+
+[響應式網站布局框架 bootstrap 官方説明手冊](https://getbootstrap.com/docs/versions/): 
+https://getbootstrap.com/docs/versions/
+
+[響應式網站布局框架 bootstrap 的 npm ( Node Package Manager ) 官方倉庫頁](https://www.npmjs.com/package/bootstrap): 
+https://www.npmjs.com/package/bootstrap
+
+[響應式網站布局框架 bootstrap 的 GitHub 官方倉庫頁](https://github.com/twbs/bootstrap): 
+https://github.com/twbs/bootstrap.git
 
 ---
 
