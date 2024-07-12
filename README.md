@@ -1,6 +1,6 @@
 ## focused crawling chrome extension
 #### web power automate using browser google chrome extension, focused crawling using google browser chrome extension.
-#### 使用 Google 瀏覽器 Chrome 擴展插件 ( extension ) 製作的, 自動化操作網頁資訊讀取, 網頁定向爬蟲工具.
+#### 使用 Google 瀏覽器 Chrome 擴展插件 ( Extension ) 製作的, 自動化操作網頁資訊讀取, 網頁定向爬蟲工具.
 #### Manifest version 3
 ---
 <p word-wrap: break-word; word-break: break-all; overflow-x: hidden; overflow-x: hidden;>
