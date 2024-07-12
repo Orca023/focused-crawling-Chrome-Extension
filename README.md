@@ -1,7 +1,7 @@
 ## focused crawling chrome extension
-#### web power automate using browser google chrome extension, focused crawling using google browser chrome extension
+#### web power automate using browser google chrome extension, focused crawling using google browser chrome extension.
+#### 使用 Google 瀏覽器 Chrome 擴展插件 ( extension ) 製作的, 自動化操作網頁資訊讀取, 網頁定向爬蟲工具.
 #### Manifest version 3
-#### 使用 Google 瀏覽器 Chrome 擴展插件 ( extension ) 製作的, 自動化操作網頁資訊讀取, 網頁定向爬蟲工具
 ---
 <p word-wrap: break-word; word-break: break-all; overflow-x: hidden; overflow-x: hidden;>
 一. 首先, 智能電話 Android 作業系統安裝 Termux 子作業系統終端模擬器 ( Terminal Emulator ) 應用.
