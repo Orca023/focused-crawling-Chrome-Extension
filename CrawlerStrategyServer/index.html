@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>control panel page</title>
+        <meta charset="utf-8"/>
+        <!-- <link rel="shortcut icon" href="#" /> -->
+        <link rel="shortcut icon" href="data:image/ico;base64,aWNv" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <!-- <link rel="stylesheet" href="./lib/bootstrap-5.1.3-dist/css/bootstrap.min.css"> -->
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+        <!-- <script type="text/javascript" src="./lib/jquery-3.6.0/jquery-3.6.0.min.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+        <!-- <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.6.0.min.js"></script> -->
+        <!-- <script src="https://apps.bdimg.com/libs/jquery/3.6.0/jquery.min.js"></script> -->
+        <!-- <script type="text/javascript" src="./lib/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script> -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+        <!-- <script id="echartsDisk" type="text/javascript" charset="utf-8" language="javascript" src="/echarts.min.js"></script> -->
+        <!-- <script async id="echartsCDN" type="text/javascript" charset="utf-8" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.3/echarts.min.js"></script> -->
+        <!-- <script id="D3jsDisk" type="text/javascript" charset="utf-8" language="javascript" src="/d3.v7.min.js"></script> -->
+        <!-- <script id="D3jsCDN" type="text/javascript" charset="utf-8" language="javascript" src="https://d3js.org/d3.v7.min.js"></script> -->
+        <!-- <link rel="stylesheet" href="./WUXIPEOPLEsHOSPITAL.css"> -->
+        <style>
+            .container {
+                width: 1024px;
+                height: 100%;
+                margin: 0 auto;
+            }
+            body {
+                background-color: transparent;  /* rgba(0, 0, 0, 0); */
+            }
+            div {
+                position: block;  /* static; */
+                background-color: transparent;  /* rgba(24, 150, 76, 0.7); */
+                margin: auto;
+                overflow-x: auto;
+                overflow-y: auto;
+                border-top-style: none;  /* solid; */
+                border-right-style: none;  /* solid; */
+                border-bottom-style: none;  /* solid; */
+                border-left-style: none;  /* solid; */
+                border-top-color: rgba(0, 0, 0, 0.7);
+                border-right-color: rgba(0, 0, 0, 0.7);
+                border-bottom-color: rgba(0, 0, 0, 0.7);
+                border-left-color: rgba(0, 0, 0, 0.7);
+                border-top-Width: 1px;
+                border-right-Width: 1px;
+                border-bottom-Width: 1px;
+                border-left-Width: 1px;
+            }
+            button {
+                color: rgba(0, 0, 0, 0.7);
+                width: auto;
+                height: auto;
+                text-align: center;  /* left; right; */
+                font-family: 'STFangsong', 'SimSun', 'Microsoft Yahei', 'Times New Roman', Helvetica, Times, Georgia, monospace, Serif;
+                font-style: normal;  /* italic; oblique; */
+                font-size: 0.875em;  /* px/16 = em ; */
+            }
+            label {
+                left: auto;
+                right: auto;
+                top: auto;
+                margin-left: 5px;
+                margin-right: 15px;
+                line-height: 20px;
+                background: transparent;
+                color: rgba(0, 0, 0, 0.7);  /* #777; */
+                width: auto;
+                height: auto;
+                font-family: 'STFangsong', 'SimSun', 'Microsoft Yahei', 'Times New Roman', Helvetica, Times, Georgia, monospace, Serif;
+                font-style: normal;  /* italic; oblique; */
+                font-size: 0.875em;  /* px/16 = em ; */
+                border-top-style: none;  /* solid; */
+                border-right-style: none;  /* solid; */
+                border-bottom-style: none;  /* solid; */
+                border-left-style: none;  /* solid; */
+                border-top-color: rgba(0, 0, 0, 0.7);
+                border-right-color: rgba(0, 0, 0, 0.7);
+                border-bottom-color: rgba(0, 0, 0, 0.7);
+                border-left-color: rgba(0, 0, 0, 0.7);
+                border-top-Width: 1px;
+                border-right-Width: 1px;
+                border-bottom-Width: 1px;
+                border-left-Width: 1px;
+            }
+            input {
+                color: rgba(0, 0, 0, 0.7);
+                width: auto;
+                height: 100%;
+                text-align: center;  /* left; right; */
+                background: transparent;
+                font-family: 'STFangsong', 'SimSun', 'Microsoft Yahei', 'Times New Roman', Helvetica, Times, Georgia, monospace, Serif;
+                font-style: normal;  /* italic; oblique; */
+                font-size: 0.875em;  /* px/16 = em ; */
+                overflow-wrap: break-word;
+                border-top-style: solid;  /* none; */
+                border-right-style: solid;  /* none; */
+                border-bottom-style: solid;  /* none; */
+                border-left-style: solid;  /* none; */
+                border-top-color: rgba(0, 0, 0, 0.7);
+                border-right-color: rgba(0, 0, 0, 0.7);
+                border-bottom-color: rgba(0, 0, 0, 0.7);
+                border-left-color: rgba(0, 0, 0, 0.7);
+                border-top-Width: 1px;
+                border-right-Width: 1px;
+                border-bottom-Width: 1px;
+                border-left-Width: 1px;
+            }
+            textarea {
+                justify-content: center;
+                vertical-align: middle;
+                align-items: center;
+                text-align: center;  /* left; right; */
+                color: rgba(0, 0, 0, 0.7);
+                width: inherit;
+                height: auto;
+                background: transparent;
+                font-family: 'STFangsong', 'SimSun', 'Microsoft Yahei', 'Times New Roman', Helvetica, Times, Georgia, monospace, Serif;
+                font-style: normal;  /* italic; oblique; */
+                font-size: 0.875em;  /* px/16 = em ; */
+                overflow-wrap: break-word;
+                border-top-style: solid;  /* none; */
+                border-right-style: solid;  /* none; */
+                border-bottom-style: solid;  /* none; */
+                border-left-style: solid;  /* none; */
+                border-top-color: rgba(0, 0, 0, 0.7);
+                border-right-color: rgba(0, 0, 0, 0.7);
+                border-bottom-color: rgba(0, 0, 0, 0.7);
+                border-left-color: rgba(0, 0, 0, 0.7);
+                border-top-Width: 1px;
+                border-right-Width: 1px;
+                border-bottom-Width: 1px;
+                border-left-Width: 1px;
+                resize: both;  /* both(預設值)--在xy方向上均可以拖拽；vertical--在垂直方向上；horizontal--在水平方向上none--不可拖拽；inherit--繼承; */
+            }
+            table {
+                background: transparent;
+                caption-side: bottom;
+                empty-cells: show;
+                table-layout: fixed;
+            }
+            table th td {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 防止網頁被使用瀏覽器菜單另存爲的方式下載 -->
+        <noscript><iframe src="*.html"></iframe></noscript>
+
+        <div class="container">
+            <p word-wrap: break-word; word-break: break-all; overflow-x: hidden; overflow-x: hidden; style="display: inline-block">
+                <span style="display: inline-block">focused crawling</span> <br>
+                <span style="display: inline-block">web power automate using browser google chrome extension.</span> <br>
+                <span style="display: inline-block">focused crawling using browser google chrome extension.</span> <br>
+                <span style="display: inline-block">Manifest version 3</span> <br>
+                <span style="display: inline-block">
+                    使用 Google 瀏覽器 Chrome 擴展插件 ( Extension ) 製作的, 自動化操作網頁資訊讀取, 網頁定向爬蟲工具.
+                </span>
+            </p>
+            <br>
+            <p word-wrap: break-word; word-break: break-all; overflow-x: hidden; overflow-x: hidden; style="display: inline-block">
+                <span style="display: inline-block">
+                    一. 啓動 Google 瀏覽器 Chrome , 並加載 Google 瀏覽器 Chrome 擴展插件 ( Extension ) ：《 focused-crawling-Chrome-Extension 》.
+                </span> <br>
+                <span style="display: inline-block">
+                    二. 運行 Google 瀏覽器 Chrome 擴展插件 ( Extension ) ：《 focused-crawling-Chrome-Extension 》, 在擴展插件的策略介面選擇「test」選項, 加載顯示「test」人機交互介面.
+                </span> <br>
+                <span style="display: inline-block">
+                    三. 啓動運行測試「testWeb」網站：root@localhost:~# /bin/node ./focused-crawling-Chrome-Extension/testWeb/server.js
+                </span> <br>
+                <span style="display: inline-block">
+                    四. 測試 Google 瀏覽器 Chrome 擴展插件 ( Extension ) ：《 focused-crawling-Chrome-Extension 》, 操控讀取測試網站「testWeb」頁面顯示的資訊.
+                </span>
+            </p>
+            <br>
+            <p word-wrap: break-word; word-break: break-all; overflow-x: hidden; overflow-x: hidden; style="display: inline-block">
+                <span style="display: inline-block">Operating system :</span> <br>
+                <span style="display: inline-block">
+                    Acer-NEO-2023 Windows10 x86_64 Inter(R)-Core(TM)-m3-6Y30
+                </span> <br>
+                <span style="display: inline-block">
+                    Acer-NEO-2023 Linux-Ubuntu-22.04 x86_64 Inter(R)-Core(TM)-m3-6Y30
+                </span> <br>
+                <span style="display: inline-block">
+                    Google-Pixel-7 Android-11 Termux-0.118 Linux-Ubuntu-22.04-LTS-rootfs Arm64-aarch64 MSM8998-Snapdragon835-Qualcomm®-Kryo™-280
+                </span>
+            </p>
+            <br>
+            <p word-wrap: break-word; word-break: break-all; overflow-x: hidden; overflow-x: hidden;>
+                <span style="display: inline-block">Browser :</span> <br>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span style="display: inline-block">Google Chrome ( Chromium ) - version 126.0.6478.127</span> <br>
+                <span style="display: inline-block">Interpreter :</span> <br>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span style="display: inline-block">Node.js - version 20.15.0</span> <br>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span style="display: inline-block">npm - version 10.7.0</span> <br>
+                <span style="display: inline-block">JavaScript library :</span> <br>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span style="display: inline-block">jQuery - version 3.6.0</span> <br>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span style="display: inline-block">Bootstrap - version 5.1.3</span>
+            </p>
+            <br>
+            <p word-wrap: break-word; word-break: break-all; overflow-x: hidden; overflow-x: hidden;>
+                <span style="display: inline-block">
+                    <a href="http://ports.ubuntu.com/pool/universe/c/chromium-browser/" target="_blank">作業系統 ( Operating system ) Linux → Ubuntu Arm64 瀏覽器 ( Browser ) 之 Google Chrome Arm64 下載官方網站</a>
+                </span> <br>
+                <span style="display: inline-block">http://ports.ubuntu.com/pool/universe/c/chromium-browser/</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://www.google.com/intl/zh-TW/chrome/dev/?standalone=1" target="_blank">瀏覽器 ( Browser ) 之 Google Chrome 下載官方網站</a>
+                </span> <br>
+                <span style="display: inline-block">https://www.google.com/intl/zh-TW/chrome/dev/?standalone=1</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://www.google.cn/intl/zh-TW/chrome/dev/?standalone=1&system=true&statcb=1&installdataindex=empty&defaultbrowser=0" target="_blank">瀏覽器 ( Browser ) 之 Google Chrome ( Chromium ) 開發人員版 ( dev ) 下載中文網站</a>
+                </span> <br>
+                <span style="display: inline-block">https://www.google.cn/intl/zh-TW/chrome/dev/?standalone=1&system=true&statcb=1&installdataindex=empty&defaultbrowser=0</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://chromedriver.storage.googleapis.com/index.html" target="_blank">瀏覽器 ( Browser ) 之 Google Chrome 驅動 ( Driver ) 下載官方網站</a>
+                </span> <br>
+                <span style="display: inline-block">https://chromedriver.storage.googleapis.com/index.html</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://npm.taobao.org/mirrors/chromedriver" target="_blank">瀏覽器 ( Browser ) 之 Google Chrome 驅動 ( Driver ) 下載官方網站淘寶網鏡像源</a>
+                </span> <br>
+                <span style="display: inline-block">https://npm.taobao.org/mirrors/chromedriver</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://node.js.org/" target="_blank">程式設計 JavaScript 語言解釋器 ( Interpreter ) 之 Node.js 官方網站</a>
+                </span> <br>
+                <span style="display: inline-block">https://node.js.org/</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://nodejs.org/en/" target="_blank">程式設計 JavaScript 語言解釋器 ( Interpreter ) 之 Node.js 官方網站</a>
+                </span> <br>
+                <span style="display: inline-block">https://nodejs.org/en/</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://nodejs.org/en/download/package-manager" target="_blank">程式設計 JavaScript 語言解釋器 ( Interpreter ) 之 Node.js 官方下載頁</a>
+                </span> <br>
+                <span style="display: inline-block">https://nodejs.org/en/download/package-manager</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://github.com/nodejs" target="_blank">程式設計 JavaScript 語言解釋器 ( Interpreter ) 之 Node.js 官方 GitHub 網站賬戶</a>
+                </span> <br>
+                <span style="display: inline-block">https://github.com/nodejs</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://github.com/nodejs/node" target="_blank">程式設計 JavaScript 語言解釋器 ( Interpreter ) 之 Node.js 官方 GitHub 網站倉庫</a>
+                </span> <br>
+                <span style="display: inline-block">https://github.com/nodejs/node.git</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://jquery.com/" target="_blank">網頁元素選擇器工具 jQuery 官方網站</a>
+                </span> <br>
+                <span style="display: inline-block">https://jquery.com/</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://jquery.com/download/" target="_blank">網頁元素選擇器工具 jQuery 官方下載頁</a>
+                </span> <br>
+                <span style="display: inline-block">https://jquery.com/download/</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://api.jquery.com/" target="_blank">網頁元素選擇器工具 jQuery 官方説明手冊</a>
+                </span> <br>
+                <span style="display: inline-block">https://api.jquery.com/</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://www.npmjs.com/package/jquery" target="_blank">網頁元素選擇器工具 jQuery 的 npm ( Node Package Manager ) 官方倉庫頁</a>
+                </span> <br>
+                <span style="display: inline-block">https://www.npmjs.com/package/jquery</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://github.com/jquery/jquery" target="_blank">網頁元素選擇器工具 jQuery 的 GitHub 官方倉庫頁</a>
+                </span> <br>
+                <span style="display: inline-block">https://github.com/jquery/jquery.git</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://v5.bootcss.com/" target="_blank">響應式網站布局框架 bootstrap 官方網站</a>
+                </span> <br>
+                <span style="display: inline-block">https://v5.bootcss.com/</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://v5.bootcss.com/docs/getting-started/download/" target="_blank">響應式網站布局框架 bootstrap 官方下載頁</a>
+                </span> <br>
+                <span style="display: inline-block">https://v5.bootcss.com/docs/getting-started/download/</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://getbootstrap.com/docs/versions/" target="_blank">響應式網站布局框架 bootstrap 官方説明手冊</a>
+                </span> <br>
+                <span style="display: inline-block">https://getbootstrap.com/docs/versions/</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://www.npmjs.com/package/bootstrap" target="_blank">響應式網站布局框架 bootstrap 的 npm ( Node Package Manager ) 官方倉庫頁</a>
+                </span> <br>
+                <span style="display: inline-block">https://www.npmjs.com/package/bootstrap</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://github.com/twbs/bootstrap" target="_blank">響應式網站布局框架 bootstrap 的 GitHub 官方倉庫頁</a>
+                </span> <br>
+                <span style="display: inline-block">https://github.com/twbs/bootstrap.git</span>
+            </p>
+        </div>
+    </body>
+</html>
