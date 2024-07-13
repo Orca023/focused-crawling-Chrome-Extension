@@ -19,20 +19,32 @@
 使用 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : focused-crawling-Chrome-Extension 説明 :
 
 1. 項目架構執行序 :
+
    (1). 單擊 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : focused-crawling-Chrome-Extension 啓動運行, 按照配置文檔 ( ./focused-crawling-Chrome-Extension/manifest.json ) 裏記錄的自定義指令預設的後臺脚本檔 ( background ), 載入運行 JavaScript 代碼脚本檔 ( ./focused-crawling-Chrome-Extension/background/starter_backgroundHtml.js ).
+
    (2). 後臺脚本檔 JavaScript 代碼脚本檔 ( ./focused-crawling-Chrome-Extension/background/starter_backgroundHtml.js ) 新建標籤頁面 ( Chrome-Tag ) 載入運行背景頁面 ( ./focused-crawling-Chrome-Extension/background/background.html ).
+
    (3). 背景頁面 ( ./focused-crawling-Chrome-Extension/background/background.html ) 新建標籤頁面 ( Chrome-Tag ) 依據背景頁面裏自定義選項, 載入運行自定義的操作頁面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ).
+
    (4). 自定義的操作頁面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 新建標籤頁面 ( Chrome-Tag ) 依據操作頁面裏自定義選項, 載入目標網站頁面待讀取頁面顯示的資訊 ( ./focused-crawling-Chrome-Extension/testWeb/ ).
+
    (5). 瀏覽器 Google-Chrome 按照配置文檔 ( ./focused-crawling-Chrome-Extension/manifest.json ) 裏記錄的自定義指令預設的注入脚本檔 ( content_scripts ), 自動在所有打開的網頁中, 載入運行 JavaScript 代碼脚本檔 ( ./focused-crawling-Chrome-Extension/content_script.js ).
+
    (6). 注入脚本檔 ( ./focused-crawling-Chrome-Extension/content_script.js ) 按照檔裏自定義設計的代碼, 判斷目標網站頁面 ( ./focused-crawling-Chrome-Extension/testWeb/ ) 打開的待讀取資訊的頁面地址 ( URL ), 並依照頁面地址 ( URL ) 選擇將自定義的插入脚本檔 ( injected_script ) 注入目標網站 ( ./focused-crawling-Chrome-Extension/testWeb/ ) 頁面, 本例會載入運行 JavaScript 代碼脚本檔 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test_injected.js ).
+
    (7). 自定義的插入脚本檔 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test_injected.js ), 從目標網站 ( ./focused-crawling-Chrome-Extension/testWeb/ ) 頁面, 向操作頁面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 返回插入成功信號.
+
    (8). 手動點擊操控, 從操作頁面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 發送信號, 經由背景頁面 ( ./focused-crawling-Chrome-Extension/background/background.html ) 轉發, 向目標網站 ( ./focused-crawling-Chrome-Extension/testWeb/ ) 頁面裏插入的脚本檔 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test_injected.js ) 發送信號, 啓動讀取頁面裏顯示的資訊及翻頁等其他網頁動作.
+
    (9). 從目標網站 ( ./focused-crawling-Chrome-Extension/testWeb/ ) 頁面裏插入的脚本檔 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test_injected.js ) 自動發送信號, 經由背景頁面 ( ./focused-crawling-Chrome-Extension/background/background.html ) 轉發, 向操作頁面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 發送讀取到的資訊結果.
+
    (10). 操作頁面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 自動將接受到的目標網站頁面顯示的資訊結果, 寫入指定位置存儲.
 
-2. 項目將自定義的操作頁面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 獨立一個頁面設計, 目的是, 與背景頁面 ( ./focused-crawling-Chrome-Extension/background/background.html ) 分開, 解偶
+2. 項目將自定義的操作頁面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 獨立一個頁面設計, 目的是, 與背景頁面 ( ./focused-crawling-Chrome-Extension/background/background.html ) 分開, 解耦合, 這樣便於日後維護擴展功能, 增加更多元的操控介面, 使之可選擇的, 適用於更多待讀取資訊的目標網站頁面.
 
-3. 項目空間裏的文件夾 testWeb 祇是一組用於配合測試 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : focused-crawling-Chrome-Extension 框架基礎功能的網站頁面, 主要用於開發階段的測試之用, 當 focused-crawling-Chrome-Extension 的策略介面選擇 test 選項加載顯示 test 人機交互介面時, 才需要啓動運行 testWeb 伺服器, 定性之後生產階段則不再需要, 所以, 若不需要測試框架基礎功能, 可將文件夾 testWeb 刪除, 不會影響 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : focused-crawling-Chrome-Extension 的功能.
+   若不考慮日後的功能擴展, 可取消獨立的操作頁面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 設計, 將之整合入背景頁面 ( ./focused-crawling-Chrome-Extension/background/background.html ), 這樣即可實現單擊 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : focused-crawling-Chrome-Extension 啓動運行, 即打開顯示操作頁面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 的效果, 更簡潔明快.
+
+3. 項目空間裏的文件夾 testWeb 祇是一組用於配合測試 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : focused-crawling-Chrome-Extension 框架基礎功能的網站頁面, 主要用於開發階段的測試之用, 當 focused-crawling-Chrome-Extension 的策略介面選擇 test 選項加載顯示 test 人機交互介面時, 才需要啓動運行 testWeb 伺服器, 定型之後生產階段則不再需要; 若不需要測試框架基礎功能, 可將文件夾 testWeb 刪除, 不會影響 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : focused-crawling-Chrome-Extension 的功能.
 
    伺服器 testWeb 運行需要 Node.js 環境, 所以運行之前, 需對作業系統 ( Operating System ) 安裝配置 Node.js 環境成功方可.
 
@@ -45,58 +57,6 @@
    可在 Linux-Ubuntu 系統的控制臺命令列人機交互介面窗口 ( Ubuntu-bash ) 使用如下指令, 啓動運行 testWeb 伺服器 :
 
    root@localhost:~# /bin/node ./focused-crawling-Chrome-Extension/testWeb/server.js
-
-2. 然後, 在智能電話 google-pixel-2 搭載的 Android-11 作業系統中, 啓動上一步已經安裝成功的 Termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 應用 ( Termux ) ；
-
-4. 然後, 在智能電話 google-pixel-2 搭載的 android-11 → termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 中, 執行如下指令, 配置模擬最高管理員 ( root ) 賬戶權限模式 :
-
-   對於未取得最高管理員 ( root ) 賬戶權限的 Android-11 作業系統, 執行如下指令, 配置模擬最高管理員 ( root ) 賬戶權限模式 :
-
-   ~ $ pkg install proot -y
-
-   然後, 執行如下指令, 開啓模擬最高管理員 ( root ) 賬戶權限模式 :
-
-   ~ $ termux-chroot
-
-   對於已取得最高管理員 ( root ) 賬戶權限的 Android-11 作業系統, 執行如下指令, 配置模擬最高管理員 ( root ) 賬戶權限模式 :
-
-   ~ $ pkg install tsu -y
-
-   然後, 執行如下指令, 開啓模擬最高管理員 ( root ) 賬戶權限模式 :
-
-   ~ $ tsu
-
-5. 然後, 在智能電話 google-pixel-2 搭載的 android-11 → termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 中, 執行如下指令, 配置授予 Termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 應用 ( Termux ) 訪問 Android-11 作業系統硬盤存儲權限 :
-
-   ~ $ termux-setup-storage
-
-6. 然後, 在智能電話 google-pixel-2 搭載的 android-11 → termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 中, 執行如下指令, 進入「 /data/data/com.termux/files/ 」目錄 :
-
-   ~ $ cd /data/data/com.termux/files/
-
-7. 然後, 在智能電話 google-pixel-2 搭載的 android-11 → termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 中, 執行如下指令, 將壓縮檔「 google-pixel-2_android-11_termux-0.118_arm64.tar.gz 」複製到「 /data/data/com.termux/files/ 」目錄 :
-
-   /data/data/com.termux/files $ cp -rf /data/data/com.termux/files/home/storage/downloads/google-pixel-2_android-11_termux-0.118_arm64.tar.gz /data/data/com.termux/files/google-pixel-2_android-11_termux-0.118_arm64.tar.gz
-
-8. 然後, 在智能電話 google-pixel-2 搭載的 android-11 → termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 中, 執行如下指令, 安裝配置 Termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 的解壓縮工具 ( tar ) 應用 :
-
-   ~ $ pkg install tar
-
-9. 然後, 在智能電話 google-pixel-2 搭載的 android-11 → termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 中, 執行如下指令, 解壓縮檔「 google-pixel-2_android-11_termux-0.118_arm64.tar.gz 」覆蓋「 /data/data/com.termux/files/ 」目錄下原有的兩個文件夾「 /data/data/com.termux/files/home/ 」和「 /data/data/com.termux/files/usr/ 」即可 :
-
-   /data/data/com.termux/files $ tar -zxvf /data/data/com.termux/files/google-pixel-2_android-11_termux-0.118_arm64.tar.gz
-
-10. 然後, 在智能電話 google-pixel-2 搭載的 android-11 → termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 中, 執行如下指令, 刪除壓縮檔「 google-pixel-2_android-11_termux-0.118_arm64.tar.gz 」即可 :
-
-   /data/data/com.termux/files $ rm -rf /data/data/com.termux/files/google-pixel-2_android-11_termux-0.118_arm64.tar.gz
-
-11. 然後, 在智能電話 google-pixel-2 搭載的 android-11 → termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 中, 執行如下指令, 退出 Termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 返回至 Android-11 作業系統 ( Operating System ) 桌面 :
-
-    /data/data/com.termux/files $ exit
-
-12. 最後, 在智能電話 google-pixel-2 搭載的 Android-11 系統中, 重新啓動已經安裝配置成功的 Termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 應用 ( Termux ) 即可 :
-
----
 
 ![]()
 
