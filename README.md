@@ -18,7 +18,7 @@
 
 使用 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : focused-crawling-Chrome-Extension 説明 :
 
-1. 然後, 在智能電話 google-pixel-2 搭載的 Android-11 作業系統中, 啓動上一步已經安裝成功的 Termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 應用 ( Termux ) ；
+1. 項目的架構, 然後, 在智能電話 google-pixel-2 搭載的 Android-11 作業系統中, 啓動上一步已經安裝成功的 Termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 應用 ( Termux ) ；
 
 1. 項目空間裏的文件夾 testWeb 祇是一組用於配合測試 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : focused-crawling-Chrome-Extension 框架基礎功能的網站頁面, 主要用於開發階段的測試之用, 當 focused-crawling-Chrome-Extension 的策略介面選擇 test 選項加載顯示 test 人機交互介面時, 才需要啓動運行 testWeb 伺服器, 定性之後生產階段則不再需要, 所以, 若不需要測試框架基礎功能, 可將文件夾 testWeb 刪除, 不會影響 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : focused-crawling-Chrome-Extension 的功能.
 
@@ -26,9 +26,11 @@
 
    可在 Linux-Ubuntu 系統的控制臺命令列人機交互介面窗口 ( Ubuntu-bash ) 使用如下指令, 安裝配置 Node.js 環境 :
 
-   root@localhost:~# sudo apt-get install -y nodejs
+   root@localhost:~# sudo apt install nodejs
 
-   可在 Linux-Ubuntu 系統的控制臺命令列人機交互介面窗口 ( Ubuntu-bash ) 使用如下指令啓動運行 testWeb 伺服器 :
+   root@localhost:~# sudo apt install npm
+
+   可在 Linux-Ubuntu 系統的控制臺命令列人機交互介面窗口 ( Ubuntu-bash ) 使用如下指令, 啓動運行 testWeb 伺服器 :
 
    root@localhost:~# /bin/node ./focused-crawling-Chrome-Extension/testWeb/server.js
 
