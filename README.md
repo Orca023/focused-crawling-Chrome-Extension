@@ -40,7 +40,7 @@
 
    (10). 操作頁面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 自動將接受到的目標網站頁面顯示的資訊結果, 寫入指定位置存儲.
 
-2. 項目將自定義的操作介面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 獨立一個頁面設計, 目的是, 與背景頁面 ( ./focused-crawling-Chrome-Extension/background/background.html ) 分開, 解耦合, 這樣便於日後維護擴展功能, 增加更多元的操控介面, 使之可選擇的, 適用於更多待讀取資訊的目標網站頁面.
+2. 項目將自定義的操作介面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 獨立一個頁面設計, 目的是, 與背景頁面 ( ./focused-crawling-Chrome-Extension/background/background.html ) 分開, 解耦合, 這樣便於日後維護擴展功能, 增加更多元的操控介面, 使之可選擇的, 適用於讀取更多目標網站頁面裏顯示的資訊.
 
    若不考慮日後的功能擴展, 可取消獨立的操作介面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 設計, 將之全部功能, 整合入背景頁面 ( ./focused-crawling-Chrome-Extension/background/background.html ), 這樣即可實現單擊 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : focused-crawling-Chrome-Extension 啓動運行, 即打開顯示操作頁面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 的效果, 更簡潔明快.
 
