@@ -16,6 +16,78 @@
 
 ---
 
+使用 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : focused-crawling-Chrome-Extension 説明 :
+
+1. 然後, 在智能電話 google-pixel-2 搭載的 Android-11 作業系統中, 啓動上一步已經安裝成功的 Termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 應用 ( Termux ) ；
+
+1. 項目空間裏的文件夾 testWeb 祇是一組用於配合測試 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : focused-crawling-Chrome-Extension 框架基礎功能的網站頁面, 主要用於開發階段的測試之用, 當 focused-crawling-Chrome-Extension 的策略介面選擇 test 選項加載顯示 test 人機交互介面時, 才需要啓動運行 testWeb 伺服器, 定性之後生產階段則不再需要, 所以, 若不需要測試框架基礎功能, 可將文件夾 testWeb 刪除, 不會影響 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : focused-crawling-Chrome-Extension 的功能.
+
+   伺服器 testWeb 運行需要 Node.js 環境, 所以運行之前, 需對作業系統 ( Operating System ) 安裝配置 Node.js 環境成功方可.
+
+   可在 Linux-Ubuntu 系統的控制臺命令列人機交互介面窗口 ( Ubuntu-bash ) 使用如下指令, 安裝配置 Node.js 環境 :
+
+   root@localhost:~# sudo apt-get install -y nodejs
+
+   可在 Linux-Ubuntu 系統的控制臺命令列人機交互介面窗口 ( Ubuntu-bash ) 使用如下指令啓動運行 testWeb 伺服器 :
+
+   root@localhost:~# /bin/node ./focused-crawling-Chrome-Extension/testWeb/server.js
+
+2. 然後, 在智能電話 google-pixel-2 搭載的 Android-11 作業系統中, 啓動上一步已經安裝成功的 Termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 應用 ( Termux ) ；
+
+4. 然後, 在智能電話 google-pixel-2 搭載的 android-11 → termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 中, 執行如下指令, 配置模擬最高管理員 ( root ) 賬戶權限模式 :
+
+   對於未取得最高管理員 ( root ) 賬戶權限的 Android-11 作業系統, 執行如下指令, 配置模擬最高管理員 ( root ) 賬戶權限模式 :
+
+   ~ $ pkg install proot -y
+
+   然後, 執行如下指令, 開啓模擬最高管理員 ( root ) 賬戶權限模式 :
+
+   ~ $ termux-chroot
+
+   對於已取得最高管理員 ( root ) 賬戶權限的 Android-11 作業系統, 執行如下指令, 配置模擬最高管理員 ( root ) 賬戶權限模式 :
+
+   ~ $ pkg install tsu -y
+
+   然後, 執行如下指令, 開啓模擬最高管理員 ( root ) 賬戶權限模式 :
+
+   ~ $ tsu
+
+5. 然後, 在智能電話 google-pixel-2 搭載的 android-11 → termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 中, 執行如下指令, 配置授予 Termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 應用 ( Termux ) 訪問 Android-11 作業系統硬盤存儲權限 :
+
+   ~ $ termux-setup-storage
+
+6. 然後, 在智能電話 google-pixel-2 搭載的 android-11 → termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 中, 執行如下指令, 進入「 /data/data/com.termux/files/ 」目錄 :
+
+   ~ $ cd /data/data/com.termux/files/
+
+7. 然後, 在智能電話 google-pixel-2 搭載的 android-11 → termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 中, 執行如下指令, 將壓縮檔「 google-pixel-2_android-11_termux-0.118_arm64.tar.gz 」複製到「 /data/data/com.termux/files/ 」目錄 :
+
+   /data/data/com.termux/files $ cp -rf /data/data/com.termux/files/home/storage/downloads/google-pixel-2_android-11_termux-0.118_arm64.tar.gz /data/data/com.termux/files/google-pixel-2_android-11_termux-0.118_arm64.tar.gz
+
+8. 然後, 在智能電話 google-pixel-2 搭載的 android-11 → termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 中, 執行如下指令, 安裝配置 Termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 的解壓縮工具 ( tar ) 應用 :
+
+   ~ $ pkg install tar
+
+9. 然後, 在智能電話 google-pixel-2 搭載的 android-11 → termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 中, 執行如下指令, 解壓縮檔「 google-pixel-2_android-11_termux-0.118_arm64.tar.gz 」覆蓋「 /data/data/com.termux/files/ 」目錄下原有的兩個文件夾「 /data/data/com.termux/files/home/ 」和「 /data/data/com.termux/files/usr/ 」即可 :
+
+   /data/data/com.termux/files $ tar -zxvf /data/data/com.termux/files/google-pixel-2_android-11_termux-0.118_arm64.tar.gz
+
+10. 然後, 在智能電話 google-pixel-2 搭載的 android-11 → termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 中, 執行如下指令, 刪除壓縮檔「 google-pixel-2_android-11_termux-0.118_arm64.tar.gz 」即可 :
+
+   /data/data/com.termux/files $ rm -rf /data/data/com.termux/files/google-pixel-2_android-11_termux-0.118_arm64.tar.gz
+
+11. 然後, 在智能電話 google-pixel-2 搭載的 android-11 → termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 中, 執行如下指令, 退出 Termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 返回至 Android-11 作業系統 ( Operating System ) 桌面 :
+
+    /data/data/com.termux/files $ exit
+
+12. 最後, 在智能電話 google-pixel-2 搭載的 Android-11 系統中, 重新啓動已經安裝配置成功的 Termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 應用 ( Termux ) 即可 :
+
+---
+
+![]()
+
+---
+
 Operating System :
 
 Acer-NEO-2023 Windows10 x86_64 Inter(R)-Core(TM)-m3-6Y30
@@ -98,62 +170,6 @@ https://github.com/twbs/bootstrap.git
 https://pan.baidu.com/s/1OK1J8J5rbMiQPabvYGDUCQ?pwd=h8t9
 
 提取碼：h8t9
-
----
-
-使用 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : focused-crawling-Chrome-Extension 説明 :
-
-1. 首先, 在智能電話 google-pixel-2 搭載的 Android-11 作業系統中, 安裝 Arm64 架構的 Termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 應用 ( com.termux_118.apk ) ；
-
-2. 然後, 在智能電話 google-pixel-2 搭載的 Android-11 作業系統中, 啓動上一步已經安裝成功的 Termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 應用 ( Termux ) ；
-
-3. 然後, 在智能電話 google-pixel-2 搭載的 android-11 → termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 中, 執行如下指令, 配置模擬最高管理員 ( root ) 賬戶權限模式 :
-
-   對於未取得最高管理員 ( root ) 賬戶權限的 Android-11 作業系統, 執行如下指令, 配置模擬最高管理員 ( root ) 賬戶權限模式 :
-
-   ~ $ pkg install proot -y
-
-   然後, 執行如下指令, 開啓模擬最高管理員 ( root ) 賬戶權限模式 :
-
-   ~ $ termux-chroot
-
-   對於已取得最高管理員 ( root ) 賬戶權限的 Android-11 作業系統, 執行如下指令, 配置模擬最高管理員 ( root ) 賬戶權限模式 :
-
-   ~ $ pkg install tsu -y
-
-   然後, 執行如下指令, 開啓模擬最高管理員 ( root ) 賬戶權限模式 :
-
-   ~ $ tsu
-
-4. 然後, 在智能電話 google-pixel-2 搭載的 android-11 → termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 中, 執行如下指令, 配置授予 Termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 應用 ( Termux ) 訪問 Android-11 作業系統硬盤存儲權限 :
-
-   ~ $ termux-setup-storage
-
-5. 然後, 在智能電話 google-pixel-2 搭載的 android-11 → termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 中, 執行如下指令, 進入「 /data/data/com.termux/files/ 」目錄 :
-
-   ~ $ cd /data/data/com.termux/files/
-
-6. 然後, 在智能電話 google-pixel-2 搭載的 android-11 → termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 中, 執行如下指令, 將壓縮檔「 google-pixel-2_android-11_termux-0.118_arm64.tar.gz 」複製到「 /data/data/com.termux/files/ 」目錄 :
-
-   /data/data/com.termux/files $ cp -rf /data/data/com.termux/files/home/storage/downloads/google-pixel-2_android-11_termux-0.118_arm64.tar.gz /data/data/com.termux/files/google-pixel-2_android-11_termux-0.118_arm64.tar.gz
-
-7. 然後, 在智能電話 google-pixel-2 搭載的 android-11 → termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 中, 執行如下指令, 安裝配置 Termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 的解壓縮工具 ( tar ) 應用 :
-
-   ~ $ pkg install tar
-
-8. 然後, 在智能電話 google-pixel-2 搭載的 android-11 → termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 中, 執行如下指令, 解壓縮檔「 google-pixel-2_android-11_termux-0.118_arm64.tar.gz 」覆蓋「 /data/data/com.termux/files/ 」目錄下原有的兩個文件夾「 /data/data/com.termux/files/home/ 」和「 /data/data/com.termux/files/usr/ 」即可 :
-
-   /data/data/com.termux/files $ tar -zxvf /data/data/com.termux/files/google-pixel-2_android-11_termux-0.118_arm64.tar.gz
-
-9. 然後, 在智能電話 google-pixel-2 搭載的 android-11 → termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 中, 執行如下指令, 刪除壓縮檔「 google-pixel-2_android-11_termux-0.118_arm64.tar.gz 」即可 :
-
-   /data/data/com.termux/files $ rm -rf /data/data/com.termux/files/google-pixel-2_android-11_termux-0.118_arm64.tar.gz
-
-10. 然後, 在智能電話 google-pixel-2 搭載的 android-11 → termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 中, 執行如下指令, 退出 Termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 返回至 Android-11 作業系統 ( Operating System ) 桌面 :
-
-    /data/data/com.termux/files $ exit
-
-11. 最後, 在智能電話 google-pixel-2 搭載的 Android-11 系統中, 重新啓動已經安裝配置成功的 Termux-0.118 作業系統 ( Operating System ) 終端模擬器 ( Terminal Emulator ) 應用 ( Termux ) 即可 :
 
 ---
 
