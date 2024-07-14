@@ -20,25 +20,25 @@
 
 1. 項目架構執行序 :
 
-   (1). 單擊 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : focused-crawling-Chrome-Extension 啓動運行, 按照配置文檔 ( ./focused-crawling-Chrome-Extension/manifest.json ) 裏記錄的自定義指令預設的後臺脚本檔 ( background ), 載入運行 JavaScript 代碼脚本檔 ( ./focused-crawling-Chrome-Extension/background/starter_backgroundHtml.js ).
+   1). 單擊 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : focused-crawling-Chrome-Extension 啓動運行, 按照配置文檔 ( ./focused-crawling-Chrome-Extension/manifest.json ) 裏記錄的自定義指令預設的後臺脚本檔 ( background ), 載入運行 JavaScript 代碼脚本檔 ( ./focused-crawling-Chrome-Extension/background/starter_backgroundHtml.js ).
 
-   (2). 後臺脚本檔 JavaScript 代碼脚本檔 ( ./focused-crawling-Chrome-Extension/background/starter_backgroundHtml.js ) 新建標籤頁面 ( Chrome-Tag ) 載入運行背景頁面 ( ./focused-crawling-Chrome-Extension/background/background.html ).
+   2). 後臺脚本檔 JavaScript 代碼脚本檔 ( ./focused-crawling-Chrome-Extension/background/starter_backgroundHtml.js ) 新建標籤頁面 ( Chrome-Tag ) 載入運行背景頁面 ( ./focused-crawling-Chrome-Extension/background/background.html ).
 
-   (3). 背景頁面 ( ./focused-crawling-Chrome-Extension/background/background.html ) 新建標籤頁面 ( Chrome-Tag ) 依據背景頁面裏自定義選項, 載入運行自定義的操作頁面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ).
+   3). 背景頁面 ( ./focused-crawling-Chrome-Extension/background/background.html ) 新建標籤頁面 ( Chrome-Tag ) 依據背景頁面裏自定義選項, 載入運行自定義的操作頁面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ).
 
-   (4). 自定義的操作頁面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 新建標籤頁面 ( Chrome-Tag ) 依據操作頁面裏自定義選項, 載入目標網站頁面待讀取頁面顯示的資訊 ( ./focused-crawling-Chrome-Extension/testWeb/ ).
+   4). 自定義的操作頁面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 新建標籤頁面 ( Chrome-Tag ) 依據操作頁面裏自定義選項, 載入目標網站頁面待讀取頁面顯示的資訊 ( ./focused-crawling-Chrome-Extension/testWeb/ ).
 
-   (5). 瀏覽器 Google-Chrome 按照配置文檔 ( ./focused-crawling-Chrome-Extension/manifest.json ) 裏記錄的自定義指令預設的注入脚本檔 ( content_scripts ), 自動在所有打開的網頁中, 載入運行 JavaScript 代碼脚本檔 ( ./focused-crawling-Chrome-Extension/content_script.js ).
+   5). 瀏覽器 Google-Chrome 按照配置文檔 ( ./focused-crawling-Chrome-Extension/manifest.json ) 裏記錄的自定義指令預設的注入脚本檔 ( content_scripts ), 自動在所有打開的網頁中, 載入運行 JavaScript 代碼脚本檔 ( ./focused-crawling-Chrome-Extension/content_script.js ).
 
-   (6). 注入脚本檔 ( ./focused-crawling-Chrome-Extension/content_script.js ) 按照檔裏自定義設計的代碼, 判斷目標網站頁面 ( ./focused-crawling-Chrome-Extension/testWeb/ ) 打開的待讀取資訊的頁面地址 ( URL ), 並依照頁面地址 ( URL ) 選擇將自定義的插入脚本檔 ( injected_script ) 注入目標網站 ( ./focused-crawling-Chrome-Extension/testWeb/ ) 頁面, 本例會載入運行 JavaScript 代碼脚本檔 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test_injected.js ).
+   6). 注入脚本檔 ( ./focused-crawling-Chrome-Extension/content_script.js ) 按照檔裏自定義設計的代碼, 判斷目標網站頁面 ( ./focused-crawling-Chrome-Extension/testWeb/ ) 打開的待讀取資訊的頁面地址 ( URL ), 並依照頁面地址 ( URL ) 選擇將自定義的插入脚本檔 ( injected_script ) 注入目標網站 ( ./focused-crawling-Chrome-Extension/testWeb/ ) 頁面, 本例會載入運行 JavaScript 代碼脚本檔 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test_injected.js ).
 
-   (7). 自定義的插入脚本檔 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test_injected.js ), 從目標網站 ( ./focused-crawling-Chrome-Extension/testWeb/ ) 頁面, 向操作頁面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 返回插入成功信號.
+   7). 自定義的插入脚本檔 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test_injected.js ), 從目標網站 ( ./focused-crawling-Chrome-Extension/testWeb/ ) 頁面, 向操作頁面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 返回插入成功信號.
 
-   (8). 手動點擊操控, 從操作頁面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 發送信號, 經由背景頁面 ( ./focused-crawling-Chrome-Extension/background/background.html ) 轉發, 向目標網站 ( ./focused-crawling-Chrome-Extension/testWeb/ ) 頁面裏插入的脚本檔 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test_injected.js ) 發送信號, 啓動讀取頁面裏顯示的資訊及翻頁等其他網頁動作.
+   8). 手動點擊操控, 從操作頁面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 發送信號, 經由背景頁面 ( ./focused-crawling-Chrome-Extension/background/background.html ) 轉發, 向目標網站 ( ./focused-crawling-Chrome-Extension/testWeb/ ) 頁面裏插入的脚本檔 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test_injected.js ) 發送信號, 啓動讀取頁面裏顯示的資訊及翻頁等其他網頁動作.
 
-   (9). 從目標網站 ( ./focused-crawling-Chrome-Extension/testWeb/ ) 頁面裏插入的脚本檔 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test_injected.js ) 自動發送信號, 經由背景頁面 ( ./focused-crawling-Chrome-Extension/background/background.html ) 轉發, 向操作頁面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 發送讀取到的資訊結果.
+   9). 從目標網站 ( ./focused-crawling-Chrome-Extension/testWeb/ ) 頁面裏插入的脚本檔 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test_injected.js ) 自動發送信號, 經由背景頁面 ( ./focused-crawling-Chrome-Extension/background/background.html ) 轉發, 向操作頁面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 發送讀取到的資訊結果.
 
-   (10). 操作頁面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 自動將接受到的目標網站頁面顯示的資訊結果, 寫入指定位置存儲.
+   10). 操作頁面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 自動將接受到的目標網站頁面顯示的資訊結果, 寫入指定位置存儲.
 
 2. 項目將自定義的操作介面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 獨立一個頁面設計, 目的是, 與背景頁面 ( ./focused-crawling-Chrome-Extension/background/background.html ) 分開, 解耦合, 這樣便於日後維護擴展功能, 增加更多元的操控介面, 使之可選擇的, 適用於讀取更多目標網站頁面裏顯示的資訊.
 
