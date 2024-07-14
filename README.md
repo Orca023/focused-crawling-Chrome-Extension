@@ -44,7 +44,7 @@
 
    若不考慮日後的功能擴展, 可取消獨立的操作介面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 設計, 將之全部功能, 整合入背景頁面 ( ./focused-crawling-Chrome-Extension/background/background.html ) 裏, 這樣即可實現單擊 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : focused-crawling-Chrome-Extension 啓動運行, 即打開顯示操作頁面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 的效果, 更簡潔明快.
 
-3. 若想擴展功能, 增加更多元的操控介面, 使之可選擇的, 適用於讀取更多目標網站頁面, 可新增複製 test/ 文件夾, 保存路徑位於 ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/ 文件夾裏, 重新命名並自定義修改文件夾 test/ 裏的四個代碼脚本檔 : test_injected.js , test.html , test.js , test.css , 並根據需要自定義修改設計編寫代碼脚本即可, 這一操作的目的, 即爲新增一組操作介面的效果, 例如像 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 類似的.
+3. 若想擴展功能, 增加更多元的操控介面, 使之可選擇的, 適用於讀取更多目標網站頁面, 可新增複製 test/ 文件夾並重新命名, 保存路徑位於 ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/ 文件夾裏, 重新命名並自定義修改文件夾 test/ 裏的四個代碼脚本檔 : test_injected.js , test.html , test.js , test.css , 根據需要自定義修改設計編寫代碼脚本即可, 這一操作的目的, 是爲實現新增一組操作介面的效果, 例如像 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 類似的.
 
    并且, 需要修改背景頁面的代碼脚本檔 ( ./focused-crawling-Chrome-Extension/background/background.html ) 和  ( ./focused-crawling-Chrome-Extension/background/background.js ) 裏的代碼, 使其可以正確找到載入運行自定義擴展新增的操作頁面的代碼脚本檔, 例如像 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 類似的.
 
