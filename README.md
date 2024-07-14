@@ -48,7 +48,7 @@
 
    并且, 需要修改背景頁面的代碼脚本檔 ( ./focused-crawling-Chrome-Extension/background/background.html ) 和  ( ./focused-crawling-Chrome-Extension/background/background.js ) 裏的代碼, 使其可以正確找到載入運行自定義擴展新增的操作頁面的代碼脚本檔.
 
-   并且, 需要修改背注入脚本檔 ( ./focused-crawling-Chrome-Extension/content_script.js ) 裏的代碼, 使其可以正確判斷, 找到載入運行自定義擴展新增的外源加載的注入代碼脚本檔, 例如像 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test_injected.js ) 類似的.
+   并且, 需要修改注入脚本檔 ( ./focused-crawling-Chrome-Extension/content_script.js ) 裏的代碼, 使其可以正確判斷自定義擴展新增的待讀取資訊的目標網站頁面的 URL 地址, 並找到載入運行對應的自定義擴展新增的外源加載的注入代碼脚本檔, 例如像 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test_injected.js ) 類似的.
 
 4. 項目空間裏的文件夾 testWeb 祇是一組用於配合測試 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : focused-crawling-Chrome-Extension 框架基礎功能的網站頁面, 主要用於開發階段的測試之用, 當 focused-crawling-Chrome-Extension 的策略介面選擇 test 選項加載顯示 test 人機交互介面時, 才需要啓動運行 testWeb 伺服器, 定型之後生產階段則不再需要; 若不需要測試框架基礎功能, 可將文件夾 testWeb 刪除, 不會影響 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : focused-crawling-Chrome-Extension 的功能.
 
