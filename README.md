@@ -46,7 +46,7 @@
 
 3. 若想擴展功能, 增加更多元的操控介面, 使之可選擇的, 適用於讀取更多目標網站頁面, 可新增複製 test/ 文件夾, 保存路徑位於 ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/ 文件夾裏, 重新命名並自定義修改文件夾 test/ 裏的四個代碼脚本檔 : test_injected.js , test.html , test.js , test.css , 並根據需要自定義修改設計編寫代碼脚本即可, 這一操作的目的, 即爲新增一組操作介面的效果, 例如像 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 類似的.
 
-   并且, 需要修改背景頁面的代碼脚本檔 ( ./focused-crawling-Chrome-Extension/background/background.html ) 和  ( ./focused-crawling-Chrome-Extension/background/background.js ) 裏的代碼, 使其可以正確找到載入運行自定義擴展新增的操作頁面的代碼脚本檔.
+   并且, 需要修改背景頁面的代碼脚本檔 ( ./focused-crawling-Chrome-Extension/background/background.html ) 和  ( ./focused-crawling-Chrome-Extension/background/background.js ) 裏的代碼, 使其可以正確找到載入運行自定義擴展新增的操作頁面的代碼脚本檔, 例如像 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 類似的.
 
    并且, 需要修改注入脚本檔 ( ./focused-crawling-Chrome-Extension/content_script.js ) 裏的代碼, 使其可以正確判斷自定義擴展新增的待讀取資訊的目標網站頁面的 URL 地址, 並找到載入運行對應的自定義擴展新增的外源加載的注入代碼脚本檔, 例如像 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test_injected.js ) 類似的.
 
