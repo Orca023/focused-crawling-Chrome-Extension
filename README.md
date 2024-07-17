@@ -22,11 +22,11 @@
 
    1). 單擊 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : focused-crawling-Chrome-Extension 啓動運行, 按照配置文檔 ( ./focused-crawling-Chrome-Extension/manifest.json ) 裏記錄的自定義指令預設的後臺脚本檔 ( background ), 載入運行 JavaScript 代碼脚本檔 ( ./focused-crawling-Chrome-Extension/background/starter_backgroundHtml.js ).
 
-   2). 後臺脚本檔 JavaScript 代碼脚本檔 ( ./focused-crawling-Chrome-Extension/background/starter_backgroundHtml.js ) 新建標籤頁面 ( Chrome-Tag ) 載入運行背景頁面 ( ./focused-crawling-Chrome-Extension/background/background.html ).
+   2). 後臺脚本檔 JavaScript 代碼脚本檔 ( ./focused-crawling-Chrome-Extension/background/starter_backgroundHtml.js ) 新建標籤頁 ( Chrome-Tag ) 載入運行背景頁面 ( ./focused-crawling-Chrome-Extension/background/background.html ).
 
-   3). 背景頁面 ( ./focused-crawling-Chrome-Extension/background/background.html ) 新建標籤頁面 ( Chrome-Tag ) 依據背景頁面裏自定義選項, 載入運行自定義的操作頁面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ).
+   3). 背景頁面 ( ./focused-crawling-Chrome-Extension/background/background.html ) 新建標籤頁 ( Chrome-Tag ) 依據背景頁面裏自定義選項, 載入運行自定義的操作頁面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ).
 
-   4). 自定義的操作頁面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 新建標籤頁面 ( Chrome-Tag ) 依據操作頁面裏自定義選項, 載入目標網站頁面待讀取頁面顯示的資訊 ( ./focused-crawling-Chrome-Extension/testWeb/ ).
+   4). 自定義的操作頁面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 新建標籤頁 ( Chrome-Tag ) 依據操作頁面裏自定義選項, 載入目標網站頁面待讀取頁面顯示的資訊 ( ./focused-crawling-Chrome-Extension/testWeb/ ).
 
    5). 瀏覽器 Google-Chrome 按照配置文檔 ( ./focused-crawling-Chrome-Extension/manifest.json ) 裏記錄的自定義指令預設的注入脚本檔 ( content_scripts ), 自動在所有打開的網頁中, 載入運行 JavaScript 代碼脚本檔 ( ./focused-crawling-Chrome-Extension/content_script.js ).
 
