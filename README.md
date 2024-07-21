@@ -80,6 +80,12 @@ Google-Pixel-7 Android-11 Termux-0.118 Linux-Ubuntu-22.04-LTS-rootfs Arm64-aarch
 
 Browser : Google Chrome ( Chromium )
 
+[瀏覽器 ( Browser ) 之 Google Chrome 官方 GitHub 網站賬戶](https://github.com/GoogleChrome): 
+https://github.com/GoogleChrome
+
+[瀏覽器 ( Browser ) 之 Google Chrome 擴展插件 (Extensions) 開發官方示例 GitHub 網站倉庫](https://github.com/GoogleChrome/chrome-extensions-samples): 
+https://github.com/GoogleChrome/chrome-extensions-samples.git
+
 [作業系統 ( Operating system ) Linux → Ubuntu Arm64 瀏覽器 ( Browser ) 之 Google Chrome Arm64 下載官方網站](http://ports.ubuntu.com/pool/universe/c/chromium-browser/): 
 http://ports.ubuntu.com/pool/universe/c/chromium-browser/
 
