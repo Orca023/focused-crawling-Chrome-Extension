@@ -4,7 +4,7 @@
 #### Manifest version 3
 #### 使用 Google 瀏覽器 Chrome 擴展插件 ( Extension ) 製作的, 自動化操作網頁讀取資訊, 網頁定向爬蟲工具.
 ---
-<p word-wrap: break-word; word-break: break-all; overflow-x: hidden; overflow-x: hidden;>
+<p word-wrap: break-word; word-break: break-all; overflow-x: hidden; overflow-x: hidden;></p>
 一. 啓動 Google 瀏覽器 Chrome , 載入 Google 瀏覽器 Chrome 擴展插件 ( Extension ) :  `focused-crawling-Chrome-Extension`
 
 二. 運行 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : `focused-crawling-Chrome-Extension` , 在擴展插件的策略介面選擇 `test` 選項, 加載顯示 `test` 人機交互介面.
@@ -12,7 +12,6 @@
 三. 啓動運行測試網站 :  `root@localhost:~# /bin/node ./focused-crawling-Chrome-Extension/testWeb/server.js`
 
 四. 測試 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : `focused-crawling-Chrome-Extension` , 操控讀取測試網站 `testWeb` 頁面顯示的資訊.
-</p>
 
 ---
 
