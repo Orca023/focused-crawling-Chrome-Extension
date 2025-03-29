@@ -5,7 +5,7 @@
 #### 使用 Google 瀏覽器 Chrome 擴展插件 ( Extension ) 製作的, 自動化操作網頁讀取資訊, 網頁定向爬蟲工具.
 ---
 <p word-wrap: break-word; word-break: break-all; overflow-x: hidden; overflow-x: hidden;>
-一. 啓動 Google 瀏覽器 Chrome , 載入 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : `focused-crawling-Chrome-Extension`
+一. 啓動 Google 瀏覽器 Chrome , 載入 Google 瀏覽器 Chrome 擴展插件 ( Extension ) :  `focused-crawling-Chrome-Extension`
 
 二. 運行 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : `focused-crawling-Chrome-Extension` , 在擴展插件的策略介面選擇 `test` 選項, 加載顯示 `test` 人機交互介面.
 
